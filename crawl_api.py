@@ -98,4 +98,3 @@ for index, matchday in enumerate(matchdays['matchdays']):
                 event_json = res.json()
                 with open(DATA_PATH + f"/matchdays/{matchday_id}/players/{player_id}.json", 'w') as f:
                   json.dump(event_json, f, indent=JSON_INDENT, ensure_ascii=False)
-# %%
