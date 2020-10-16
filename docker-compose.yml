@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  proxy:
+    image: laureichardt/public:proxy_0.0.1
+    container_name: proxy
+    restart: always
+    environment:
+      - TORS=8
+    ports:
+      - 127.0.0.1:8118:8118

@@ -12,12 +12,17 @@ API_URL = "https://api.spitch.live"
 DATA_PATH = "data/"
 JSON_INDENT = 2
 
+PROXIES = {
+  "http": "127.0.0.1:8118",
+  "https": "127.0.0.1:8118",
+}
+
 # %% **********************************
 # Crawl contestants
 # *************************************
 
 # request contestants json
-res = requests.get(API_URL + '/contestants')
+res = requests.get(API_URL + '/contestants', proxies=PROXIES)
 contestants = res.json()
 
 # write contestants json to file
@@ -29,7 +34,7 @@ with open(DATA_PATH + 'contestants.json', 'w') as f:
 # *************************************
 
 # request matchdays json
-res = requests.get(API_URL + '/matchdays')
+res = requests.get(API_URL + '/matchdays', proxies=PROXIES)
 matchdays = res.json()
 
 # write matchdays json to file
@@ -46,12 +51,12 @@ p.mkdir(exist_ok=True)
 
 # make request for every matchday_id inside matchdays list
 for index, matchday in enumerate(matchdays['matchdays']):
-    if index < 3:
-        matchday_id = matchday['id']
-        res = requests.get(API_URL + f"/matchdays/{matchday_id}")
-        matchday_json = res.json()
-        with open(DATA_PATH + f"/matchdays/{matchday_id}.json", 'w') as f:
-            json.dump(matchday_json, f, indent=JSON_INDENT, ensure_ascii=False)
+    # if index < 3:
+    matchday_id = matchday['id']
+    res = requests.get(API_URL + f"/matchdays/{matchday_id}", proxies=PROXIES)
+    matchday_json = res.json()
+    with open(DATA_PATH + f"/matchdays/{matchday_id}.json", 'w') as f:
+        json.dump(matchday_json, f, indent=JSON_INDENT, ensure_ascii=False)
 
 # %% **********************************
 # Crawl players
@@ -63,12 +68,12 @@ p.mkdir(exist_ok=True)
 
 # make request for every player inside players list
 for index, player in enumerate(contestants['players']):
-    if index < 3:
-        player_id = player['id']
-        res = requests.get(API_URL + f"/players/{player_id}")
-        player_json = res.json()
-        with open(DATA_PATH + f"/players/{player_id}.json", 'w') as f:
-            json.dump(player_json, f, indent=JSON_INDENT, ensure_ascii=False)
+    # if index < 3:
+    player_id = player['id']
+    res = requests.get(API_URL + f"/players/{player_id}", proxies=PROXIES)
+    player_json = res.json()
+    with open(DATA_PATH + f"/players/{player_id}.json", 'w') as f:
+        json.dump(player_json, f, indent=JSON_INDENT, ensure_ascii=False)
 
 # %% **********************************
 # Crawl events
@@ -80,21 +85,21 @@ p.mkdir(exist_ok=True)
 
 # make request for every matchday_id inside matchdays list
 for index, matchday in enumerate(matchdays['matchdays']):
-    if index < 3: 
-        matchday_id = matchday['id']
+    # if index < 3:
+    matchday_id = matchday['id']
 
-        # create folder data/matchdays/{matchday_id}
-        p = Path(DATA_PATH + f"/matchdays/{matchday_id}")
-        p.mkdir(exist_ok=True)
+    # create folder data/matchdays/{matchday_id}
+    p = Path(DATA_PATH + f"/matchdays/{matchday_id}")
+    p.mkdir(exist_ok=True)
 
-        # create players folder in data/matchdays/{matchday_id}, e.g. data/matchdays/{matchday_id}/players
-        p = Path(DATA_PATH + f"/matchdays/{matchday_id}/players")
-        p.mkdir(exist_ok=True)
+    # create players folder in data/matchdays/{matchday_id}, e.g. data/matchdays/{matchday_id}/players
+    p = Path(DATA_PATH + f"/matchdays/{matchday_id}/players")
+    p.mkdir(exist_ok=True)
 
-        for index, player in enumerate(contestants['players']):
-            if index < 3:
-                player_id = player['id']
-                res = requests.get(API_URL + f"/matchdays/{matchday_id}/players/{player_id}/events")
-                event_json = res.json()
-                with open(DATA_PATH + f"/matchdays/{matchday_id}/players/{player_id}.json", 'w') as f:
-                  json.dump(event_json, f, indent=JSON_INDENT, ensure_ascii=False)
+    for index, player in enumerate(contestants['players']):
+        # if index < 3:
+        player_id = player['id']
+        res = requests.get(API_URL + f"/matchdays/{matchday_id}/players/{player_id}/events", proxies=PROXIES)
+        event_json = res.json()
+        with open(DATA_PATH + f"/matchdays/{matchday_id}/players/{player_id}.json", 'w') as f:
+            json.dump(event_json, f, indent=JSON_INDENT, ensure_ascii=False)
