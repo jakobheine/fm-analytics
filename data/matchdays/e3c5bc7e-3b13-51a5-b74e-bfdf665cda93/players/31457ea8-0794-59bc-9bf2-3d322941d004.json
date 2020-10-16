@@ -1,0 +1,76 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": -20,
+      "type": "goalMissedFar"
+    },
+    {
+      "occurrences": 1,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "occurrences": 1,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T15:18:01Z",
+      "id": 849381,
+      "minutes": 86,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 3,
+      "corrected": false,
+      "datetime": "2020-09-19T15:22:31Z",
+      "id": 849681,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 4,
+      "corrected": false,
+      "datetime": "2020-09-19T15:22:32Z",
+      "id": 849701,
+      "minutes": 90,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 6,
+      "corrected": false,
+      "datetime": "2020-09-19T15:25:01Z",
+      "id": 849878,
+      "minutes": 90,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 6,
+      "corrected": false,
+      "datetime": "2020-09-19T15:25:01Z",
+      "id": 849879,
+      "minutes": 90,
+      "score": -20,
+      "type": "goalMissedFar"
+    }
+  ]
+}

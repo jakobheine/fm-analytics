@@ -1,0 +1,370 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": 12,
+      "type": "farCorner"
+    },
+    {
+      "occurrences": 1,
+      "score": -15,
+      "type": "foul"
+    },
+    {
+      "occurrences": 4,
+      "score": 60,
+      "type": "interception"
+    },
+    {
+      "occurrences": 13,
+      "score": 26,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOff"
+    },
+    {
+      "occurrences": 5,
+      "score": 75,
+      "type": "successfulTackle"
+    },
+    {
+      "occurrences": 4,
+      "score": -8,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "occurrences": 1,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:37:00Z",
+      "id": 850103,
+      "minutes": 6,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:37:00Z",
+      "id": 850099,
+      "minutes": 5,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:04:30Z",
+      "id": 850549,
+      "minutes": 32,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:31:00Z",
+      "id": 849990,
+      "minutes": 1,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:44:02Z",
+      "id": 850183,
+      "minutes": 10,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:44:02Z",
+      "id": 850185,
+      "minutes": 10,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:55:01Z",
+      "id": 850399,
+      "minutes": 24,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:36:00Z",
+      "id": 850083,
+      "minutes": 5,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-19T16:47:00Z",
+      "id": 850275,
+      "minutes": 15,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:55:01Z",
+      "id": 850409,
+      "minutes": 24,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:44:00Z",
+      "id": 850118,
+      "minutes": 7,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:46:00Z",
+      "id": 850263,
+      "minutes": 15,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:53:00Z",
+      "id": 850365,
+      "minutes": 22,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:44:02Z",
+      "id": 850160,
+      "minutes": 9,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:44:04Z",
+      "id": 850236,
+      "minutes": 13,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-19T17:04:30Z",
+      "id": 850545,
+      "minutes": 32,
+      "score": 12,
+      "type": "farCorner"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:44:00Z",
+      "id": 850115,
+      "minutes": 7,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T16:49:00Z",
+      "id": 850305,
+      "minutes": 18,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:07:00Z",
+      "id": 850605,
+      "minutes": 36,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:01:00Z",
+      "id": 850499,
+      "minutes": 29,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:08:00Z",
+      "id": 850614,
+      "minutes": 37,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:40:30Z",
+      "id": 850876,
+      "minutes": 49,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-19T16:46:00Z",
+      "id": 850274,
+      "minutes": 15,
+      "score": 2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:02:31Z",
+      "id": 850538,
+      "minutes": 32,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-19T17:02:31Z",
+      "id": 850544,
+      "minutes": 32,
+      "score": -2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:04:31Z",
+      "id": 850575,
+      "minutes": 33,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-09-19T17:17:30Z",
+      "id": 850762,
+      "minutes": 45,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:05:30Z",
+      "id": 850586,
+      "minutes": 34,
+      "score": -15,
+      "type": "foul"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:13:00Z",
+      "id": 850677,
+      "minutes": 41,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:16:30Z",
+      "id": 850730,
+      "minutes": 44,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:47:00Z",
+      "id": 850924,
+      "minutes": 55,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:48:30Z",
+      "id": 850959,
+      "minutes": 57,
+      "score": 0,
+      "type": "playerOff"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:41:00Z",
+      "id": 850893,
+      "minutes": 50,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:41:00Z",
+      "id": 850895,
+      "minutes": 50,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-19T17:04:31Z",
+      "id": 850817,
+      "minutes": 33,
+      "score": -2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-19T17:47:30Z",
+      "id": 850949,
+      "minutes": 56,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    }
+  ]
+}

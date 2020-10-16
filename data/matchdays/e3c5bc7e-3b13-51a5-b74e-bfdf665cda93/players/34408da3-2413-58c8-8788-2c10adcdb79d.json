@@ -1,0 +1,600 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 4,
+      "score": 120,
+      "type": "defended"
+    },
+    {
+      "occurrences": 1,
+      "score": 12,
+      "type": "freeKick"
+    },
+    {
+      "occurrences": 7,
+      "score": -175,
+      "type": "goalAgainst"
+    },
+    {
+      "occurrences": 1,
+      "score": -20,
+      "type": "lostPenalty"
+    },
+    {
+      "occurrences": 17,
+      "score": 34,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "occurrences": 5,
+      "score": 60,
+      "type": "superPass"
+    },
+    {
+      "occurrences": 0,
+      "score": 0,
+      "type": "throwIn"
+    },
+    {
+      "occurrences": 19,
+      "score": -38,
+      "type": "unsuccessfulPass"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:39:00Z",
+      "id": 841513,
+      "minutes": 7,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:44:00Z",
+      "id": 841599,
+      "minutes": 12,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:38:31Z",
+      "id": 841503,
+      "minutes": 6,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:38:31Z",
+      "id": 841501,
+      "minutes": 6,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:44:00Z",
+      "id": 841603,
+      "minutes": 12,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:36:02Z",
+      "id": 841483,
+      "minutes": 4,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:37:31Z",
+      "id": 841495,
+      "minutes": 5,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:42:03Z",
+      "id": 841560,
+      "minutes": 10,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:50:00Z",
+      "id": 841677,
+      "minutes": 18,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:55:01Z",
+      "id": 841749,
+      "minutes": 23,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:48:30Z",
+      "id": 841653,
+      "minutes": 15,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:56:00Z",
+      "id": 841759,
+      "minutes": 23,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:48:30Z",
+      "id": 841660,
+      "minutes": 16,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:50:30Z",
+      "id": 841697,
+      "minutes": 19,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:53:31Z",
+      "id": 841729,
+      "minutes": 22,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:57:30Z",
+      "id": 841781,
+      "minutes": 24,
+      "score": 30,
+      "type": "defended"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:58:30Z",
+      "id": 841810,
+      "minutes": 26,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T18:59:30Z",
+      "id": 841822,
+      "minutes": 27,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:02:30Z",
+      "id": 841865,
+      "minutes": 31,
+      "score": -20,
+      "type": "lostPenalty"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:01:01Z",
+      "id": 841851,
+      "minutes": 29,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:15:01Z",
+      "id": 842045,
+      "minutes": 43,
+      "score": 2,
+      "type": "throwIn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:16:00Z",
+      "id": 842053,
+      "minutes": 44,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-09-18T19:18:30Z",
+      "id": 842086,
+      "minutes": 45,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:14:00Z",
+      "id": 842018,
+      "minutes": 41,
+      "score": 30,
+      "type": "defended"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:16:00Z",
+      "id": 842060,
+      "minutes": 44,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-18T19:14:00Z",
+      "id": 842063,
+      "minutes": 41,
+      "score": -30,
+      "type": "defended"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:08:01Z",
+      "id": 841933,
+      "minutes": 36,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:12:32Z",
+      "id": 841993,
+      "minutes": 40,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-18T19:30:00Z",
+      "id": 842122,
+      "minutes": 43,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-18T19:15:01Z",
+      "id": 842121,
+      "minutes": 43,
+      "score": -2,
+      "type": "throwIn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:12:30Z",
+      "id": 841956,
+      "minutes": 38,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:36:30Z",
+      "id": 842130,
+      "minutes": 46,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:37:31Z",
+      "id": 842155,
+      "minutes": 47,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:39:00Z",
+      "id": 842167,
+      "minutes": 48,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:00:01Z",
+      "id": 842501,
+      "minutes": 69,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:02:01Z",
+      "id": 842515,
+      "minutes": 71,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:43:01Z",
+      "id": 842223,
+      "minutes": 51,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:47:30Z",
+      "id": 842282,
+      "minutes": 56,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:49:32Z",
+      "id": 842347,
+      "minutes": 59,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:53:31Z",
+      "id": 842393,
+      "minutes": 63,
+      "score": 30,
+      "type": "defended"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:08:01Z",
+      "id": 842619,
+      "minutes": 77,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:08:01Z",
+      "id": 842621,
+      "minutes": 77,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:53:30Z",
+      "id": 842384,
+      "minutes": 62,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-18T20:02:01Z",
+      "id": 842545,
+      "minutes": 71,
+      "score": -2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:59:00Z",
+      "id": 842471,
+      "minutes": 68,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:43:30Z",
+      "id": 842245,
+      "minutes": 53,
+      "score": 12,
+      "type": "freeKick"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:57:31Z",
+      "id": 842438,
+      "minutes": 66,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:51:31Z",
+      "id": 842356,
+      "minutes": 60,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:51:31Z",
+      "id": 842362,
+      "minutes": 61,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:53:31Z",
+      "id": 842399,
+      "minutes": 63,
+      "score": 30,
+      "type": "defended"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:55:00Z",
+      "id": 842401,
+      "minutes": 63,
+      "score": 30,
+      "type": "defended"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T19:43:00Z",
+      "id": 842200,
+      "minutes": 50,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:02:01Z",
+      "id": 842530,
+      "minutes": 71,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:10:02Z",
+      "id": 842642,
+      "minutes": 78,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:11:31Z",
+      "id": 842681,
+      "minutes": 80,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:12:00Z",
+      "id": 842699,
+      "minutes": 81,
+      "score": -25,
+      "type": "goalAgainst"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:14:00Z",
+      "id": 842706,
+      "minutes": 83,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:15:31Z",
+      "id": 842731,
+      "minutes": 85,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:17:01Z",
+      "id": 842769,
+      "minutes": 86,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:18:01Z",
+      "id": 842775,
+      "minutes": 87,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:19:01Z",
+      "id": 842800,
+      "minutes": 88,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    }
+  ]
+}

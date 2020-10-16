@@ -1,0 +1,235 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": -20,
+      "type": "goalMissedFar"
+    },
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "occurrences": 5,
+      "score": 10,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 3,
+      "score": 45,
+      "type": "successfulTackle"
+    },
+    {
+      "occurrences": 1,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "occurrences": 7,
+      "score": -14,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "occurrences": 2,
+      "score": -20,
+      "type": "unsuccessfulTackle"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:14:01Z",
+      "id": 879439,
+      "minutes": 84,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-10-04T15:20:02Z",
+      "id": 879552,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:05:31Z",
+      "id": 879289,
+      "minutes": 76,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:03:32Z",
+      "id": 879269,
+      "minutes": 75,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:52:31Z",
+      "id": 879077,
+      "minutes": 63,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:14:02Z",
+      "id": 879457,
+      "minutes": 85,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:16:01Z",
+      "id": 879476,
+      "minutes": 87,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:58:31Z",
+      "id": 879162,
+      "minutes": 69,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:59:30Z",
+      "id": 879189,
+      "minutes": 70,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:59:31Z",
+      "id": 879195,
+      "minutes": 71,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:02:01Z",
+      "id": 879221,
+      "minutes": 72,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:53:30Z",
+      "id": 879100,
+      "minutes": 64,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:02:01Z",
+      "id": 879222,
+      "minutes": 72,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:59:30Z",
+      "id": 879185,
+      "minutes": 70,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T14:59:31Z",
+      "id": 879197,
+      "minutes": 71,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:16:01Z",
+      "id": 879466,
+      "minutes": 86,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:02:01Z",
+      "id": 879229,
+      "minutes": 72,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:16:00Z",
+      "id": 879463,
+      "minutes": 86,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-10-04T15:20:02Z",
+      "id": 879554,
+      "minutes": 90,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-04T15:08:31Z",
+      "id": 879331,
+      "minutes": 79,
+      "score": -20,
+      "type": "goalMissedFar"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-10-04T15:20:01Z",
+      "id": 879532,
+      "minutes": 90,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    }
+  ]
+}

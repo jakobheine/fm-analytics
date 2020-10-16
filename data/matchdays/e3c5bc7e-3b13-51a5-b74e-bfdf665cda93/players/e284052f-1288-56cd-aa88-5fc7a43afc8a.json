@@ -1,0 +1,71 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "occurrences": 2,
+      "score": 4,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "successfulTackle"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:11:31Z",
+      "id": 842674,
+      "minutes": 80,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:11:31Z",
+      "id": 842672,
+      "minutes": 80,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:10:02Z",
+      "id": 842646,
+      "minutes": 79,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:14:00Z",
+      "id": 842704,
+      "minutes": 83,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-18T20:15:31Z",
+      "id": 842738,
+      "minutes": 85,
+      "score": 15,
+      "type": "interception"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 0,
+      "score": 0,
+      "type": "blockedGoalShot"
+    },
+    {
+      "occurrences": 1,
+      "score": -15,
+      "type": "foul"
+    },
+    {
+      "occurrences": 3,
+      "score": 6,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "successfulTackle"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-25T20:18:30Z",
+      "id": 855836,
+      "minutes": 85,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 3,
+      "corrected": false,
+      "datetime": "2020-09-25T20:26:01Z",
+      "id": 855965,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 4,
+      "corrected": false,
+      "datetime": "2020-09-25T20:27:00Z",
+      "id": 855985,
+      "minutes": 90,
+      "score": -15,
+      "type": "foul"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-25T20:22:31Z",
+      "id": 855863,
+      "minutes": 87,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-09-25T20:23:30Z",
+      "id": 855926,
+      "minutes": 90,
+      "score": 20,
+      "type": "blockedGoalShot"
+    },
+    {
+      "additional_minutes": 4,
+      "corrected": false,
+      "datetime": "2020-09-25T20:26:01Z",
+      "id": 855973,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 4,
+      "corrected": false,
+      "datetime": "2020-09-25T20:26:01Z",
+      "id": 855975,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": true,
+      "datetime": "2020-09-25T20:23:30Z",
+      "id": 855984,
+      "minutes": 90,
+      "score": -20,
+      "type": "blockedGoalShot"
+    }
+  ]
+}

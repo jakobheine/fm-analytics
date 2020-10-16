@@ -1,0 +1,259 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": 60,
+      "type": "awardedPenalty"
+    },
+    {
+      "occurrences": 1,
+      "score": 18,
+      "type": "cross"
+    },
+    {
+      "occurrences": 1,
+      "score": 12,
+      "type": "farCorner"
+    },
+    {
+      "occurrences": 1,
+      "score": 100,
+      "type": "goalAssist"
+    },
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "occurrences": 6,
+      "score": 12,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 50,
+      "type": "shotAtGoal"
+    },
+    {
+      "occurrences": 3,
+      "score": 45,
+      "type": "successfulTackle"
+    },
+    {
+      "occurrences": 3,
+      "score": -6,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "occurrences": 3,
+      "score": -30,
+      "type": "unsuccessfulTackle"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:59:00Z",
+      "id": 865846,
+      "minutes": 63,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:54:30Z",
+      "id": 865843,
+      "minutes": 63,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:59:02Z",
+      "id": 865875,
+      "minutes": 65,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:54:30Z",
+      "id": 865841,
+      "minutes": 63,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:03:00Z",
+      "id": 865963,
+      "minutes": 70,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:03:01Z",
+      "id": 865979,
+      "minutes": 71,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:59:03Z",
+      "id": 865898,
+      "minutes": 66,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:09:00Z",
+      "id": 866064,
+      "minutes": 77,
+      "score": 100,
+      "type": "goalAssist"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:16:30Z",
+      "id": 866136,
+      "minutes": 84,
+      "score": 18,
+      "type": "cross"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-09-27T15:22:01Z",
+      "id": 866241,
+      "minutes": 90,
+      "score": 60,
+      "type": "awardedPenalty"
+    },
+    {
+      "additional_minutes": 3,
+      "corrected": false,
+      "datetime": "2020-09-27T15:25:01Z",
+      "id": 866255,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:51:02Z",
+      "id": 865794,
+      "minutes": 58,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:53:30Z",
+      "id": 865821,
+      "minutes": 61,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T14:59:02Z",
+      "id": 865877,
+      "minutes": 65,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:16:31Z",
+      "id": 866149,
+      "minutes": 84,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:01:30Z",
+      "id": 865911,
+      "minutes": 68,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:05:32Z",
+      "id": 866027,
+      "minutes": 74,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:22:01Z",
+      "id": 866238,
+      "minutes": 90,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:22:01Z",
+      "id": 866240,
+      "minutes": 90,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:19:31Z",
+      "id": 866202,
+      "minutes": 88,
+      "score": 12,
+      "type": "farCorner"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:22:00Z",
+      "id": 866224,
+      "minutes": 90,
+      "score": 50,
+      "type": "shotAtGoal"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-27T15:05:31Z",
+      "id": 866011,
+      "minutes": 73,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    }
+  ]
+}

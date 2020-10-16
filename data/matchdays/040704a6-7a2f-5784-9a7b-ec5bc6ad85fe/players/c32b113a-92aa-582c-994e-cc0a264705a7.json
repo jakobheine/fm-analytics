@@ -1,0 +1,48 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": -20,
+      "type": "goalMissedFar"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 50,
+      "type": "shotAtGoal"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T15:01:01Z",
+      "id": 874740,
+      "minutes": 70,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T15:04:31Z",
+      "id": 875049,
+      "minutes": 75,
+      "score": -20,
+      "type": "goalMissedFar"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T15:11:03Z",
+      "id": 875522,
+      "minutes": 81,
+      "score": 50,
+      "type": "shotAtGoal"
+    }
+  ]
+}

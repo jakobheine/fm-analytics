@@ -1,0 +1,387 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 2,
+      "score": 30,
+      "type": "interception"
+    },
+    {
+      "occurrences": 21,
+      "score": 42,
+      "type": "pass"
+    },
+    {
+      "occurrences": 3,
+      "score": 45,
+      "type": "successfulTackle"
+    },
+    {
+      "occurrences": 1,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "occurrences": 5,
+      "score": -10,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "occurrences": 5,
+      "score": -50,
+      "type": "unsuccessfulTackle"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:35:30Z",
+      "id": 876602,
+      "minutes": 3,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-10-03T16:44:30Z",
+      "id": 876741,
+      "minutes": 12,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:35:31Z",
+      "id": 876617,
+      "minutes": 4,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:45:00Z",
+      "id": 876766,
+      "minutes": 14,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:50:00Z",
+      "id": 876836,
+      "minutes": 18,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:05:01Z",
+      "id": 877044,
+      "minutes": 33,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:11:00Z",
+      "id": 877141,
+      "minutes": 39,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:57:01Z",
+      "id": 876908,
+      "minutes": 24,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:54:31Z",
+      "id": 876883,
+      "minutes": 23,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:48:30Z",
+      "id": 876772,
+      "minutes": 15,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:48:30Z",
+      "id": 876776,
+      "minutes": 15,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:48:31Z",
+      "id": 876804,
+      "minutes": 16,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:57:01Z",
+      "id": 876914,
+      "minutes": 25,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:57:01Z",
+      "id": 876916,
+      "minutes": 25,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:42:31Z",
+      "id": 877418,
+      "minutes": 51,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:43:30Z",
+      "id": 877456,
+      "minutes": 53,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T16:48:30Z",
+      "id": 876779,
+      "minutes": 15,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-10-03T17:09:31Z",
+      "id": 877138,
+      "minutes": 38,
+      "score": 10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:09:31Z",
+      "id": 877132,
+      "minutes": 38,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:38:01Z",
+      "id": 877355,
+      "minutes": 48,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:47:31Z",
+      "id": 877517,
+      "minutes": 57,
+      "score": 15,
+      "type": "successfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-10-03T17:14:00Z",
+      "id": 877156,
+      "minutes": 38,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:38:00Z",
+      "id": 877347,
+      "minutes": 48,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:39:30Z",
+      "id": 877361,
+      "minutes": 48,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:11:00Z",
+      "id": 877143,
+      "minutes": 39,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:38:01Z",
+      "id": 877356,
+      "minutes": 48,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:40:01Z",
+      "id": 877394,
+      "minutes": 50,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:59:30Z",
+      "id": 877696,
+      "minutes": 69,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:43:31Z",
+      "id": 877469,
+      "minutes": 54,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:52:31Z",
+      "id": 877602,
+      "minutes": 63,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T17:59:30Z",
+      "id": 877693,
+      "minutes": 69,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:03:31Z",
+      "id": 877736,
+      "minutes": 73,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:08:00Z",
+      "id": 877781,
+      "minutes": 75,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:10:01Z",
+      "id": 877859,
+      "minutes": 79,
+      "score": -10,
+      "type": "unsuccessfulTackle"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:20:31Z",
+      "id": 877968,
+      "minutes": 90,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:12:00Z",
+      "id": 877864,
+      "minutes": 81,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:15:30Z",
+      "id": 877909,
+      "minutes": 84,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:15:31Z",
+      "id": 877929,
+      "minutes": 85,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T18:08:00Z",
+      "id": 877784,
+      "minutes": 75,
+      "score": 2,
+      "type": "pass"
+    }
+  ]
+}

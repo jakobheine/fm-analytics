@@ -1,0 +1,107 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "occurrences": 4,
+      "score": -8,
+      "type": "unsuccessfulPass"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-20T17:38:00Z",
+      "id": 854322,
+      "minutes": 79,
+      "score": 2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-20T17:38:00Z",
+      "id": 854299,
+      "minutes": 79,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-20T17:45:30Z",
+      "id": 854409,
+      "minutes": 86,
+      "score": 12,
+      "type": "superPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-20T17:47:01Z",
+      "id": 854441,
+      "minutes": 89,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-20T17:39:00Z",
+      "id": 854314,
+      "minutes": 80,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": true,
+      "datetime": "2020-09-20T17:40:30Z",
+      "id": 854321,
+      "minutes": 79,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-20T17:37:00Z",
+      "id": 854277,
+      "minutes": 78,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-20T17:41:31Z",
+      "id": 854350,
+      "minutes": 83,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-09-20T17:49:31Z",
+      "id": 854491,
+      "minutes": 90,
+      "score": -2,
+      "type": "unsuccessfulPass"
+    }
+  ]
+}

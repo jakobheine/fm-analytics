@@ -1,0 +1,259 @@
+{
+  "aggregated_event_sections": [
+    {
+      "event_count": 59,
+      "events": [
+        {
+          "occurrences": 37,
+          "score": 74,
+          "type": "pass"
+        },
+        {
+          "occurrences": 17,
+          "score": -34,
+          "type": "unsuccessfulPass"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "superPass"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "throwIn"
+        },
+        {
+          "occurrences": 1,
+          "score": 18,
+          "type": "cross"
+        },
+        {
+          "occurrences": 3,
+          "score": 45,
+          "type": "interception"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "freeKick"
+        },
+        {
+          "occurrences": 1,
+          "score": 12,
+          "type": "farCorner"
+        }
+      ],
+      "localized_title_key": "player_detail_event_section_passing",
+      "total_score": 115
+    },
+    {
+      "event_count": 0,
+      "events": [
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "defended"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "savedPenalty"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "goalAgainst"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "lostPenalty"
+        }
+      ],
+      "localized_title_key": "player_detail_event_section_goalkeeping",
+      "total_score": 0
+    },
+    {
+      "event_count": 6,
+      "events": [
+        {
+          "occurrences": 1,
+          "score": 200,
+          "type": "goal"
+        },
+        {
+          "occurrences": 1,
+          "score": 100,
+          "type": "goalAssist"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "doublePack"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "hattrick"
+        },
+        {
+          "occurrences": 2,
+          "score": 100,
+          "type": "shotAtGoal"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "goalMissedFar"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "penaltyGoal"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "unsuccessfulPenalty"
+        },
+        {
+          "occurrences": 1,
+          "score": 60,
+          "type": "awardedPenalty"
+        },
+        {
+          "occurrences": 1,
+          "score": -15,
+          "type": "offside"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "missedChance"
+        }
+      ],
+      "localized_title_key": "player_detail_event_section_attack",
+      "total_score": 445
+    },
+    {
+      "event_count": 29,
+      "events": [
+        {
+          "occurrences": 12,
+          "score": 180,
+          "type": "successfulTackle"
+        },
+        {
+          "occurrences": 17,
+          "score": -170,
+          "type": "unsuccessfulTackle"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "blockedGoalShot"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "error"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "ownGoal"
+        }
+      ],
+      "localized_title_key": "player_detail_event_section_defense",
+      "total_score": 10
+    },
+    {
+      "event_count": 3,
+      "events": [
+        {
+          "occurrences": 3,
+          "score": -45,
+          "type": "foul"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "causedPenalty"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "yellowCard"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "secondYellowCard"
+        },
+        {
+          "occurrences": 0,
+          "score": 0,
+          "type": "redCard"
+        }
+      ],
+      "localized_title_key": "player_detail_event_section_discipline",
+      "total_score": -45
+    }
+  ],
+  "information": {
+    "age": 23,
+    "date_of_birth": "1997-08-06",
+    "description": null,
+    "height": 189,
+    "nationality": "IT",
+    "weight": 79
+  },
+  "score_history": [
+    {
+      "matchday": 1,
+      "score": 55
+    },
+    {
+      "matchday": 2,
+      "score": 264
+    },
+    {
+      "matchday": 3,
+      "score": 206
+    }
+  ],
+  "statistics": {
+    "matches_in_starting_lineup": 2,
+    "matches_total": 3,
+    "successful_tackle_rate": null,
+    "top_events": [
+      {
+        "occurrences": 1,
+        "score": 200,
+        "type": "goal"
+      },
+      {
+        "occurrences": 1,
+        "score": 200,
+        "type": "goalPlusPenaltyGoal"
+      },
+      {
+        "occurrences": 1,
+        "score": 100,
+        "type": "goalAssist"
+      },
+      {
+        "occurrences": 2,
+        "score": 100,
+        "type": "shotAtGoal"
+      },
+      {
+        "occurrences": 0,
+        "score": 0,
+        "type": "missedChance"
+      }
+    ],
+    "utilization_rate": 1.0
+  }
+}

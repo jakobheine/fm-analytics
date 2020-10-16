@@ -1,0 +1,48 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": -15,
+      "type": "foul"
+    },
+    {
+      "occurrences": 1,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T15:18:35Z",
+      "id": 876096,
+      "minutes": 88,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T15:19:32Z",
+      "id": 876214,
+      "minutes": 89,
+      "score": -15,
+      "type": "foul"
+    },
+    {
+      "additional_minutes": 2,
+      "corrected": false,
+      "datetime": "2020-10-03T15:22:02Z",
+      "id": 876427,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    }
+  ]
+}

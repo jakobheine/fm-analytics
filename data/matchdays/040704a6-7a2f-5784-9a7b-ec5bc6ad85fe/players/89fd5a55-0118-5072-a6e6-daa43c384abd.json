@@ -1,0 +1,34 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": 15,
+      "type": "interception"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-10-03T15:19:32Z",
+      "id": 876216,
+      "minutes": 89,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 2,
+      "corrected": false,
+      "datetime": "2020-10-03T15:24:01Z",
+      "id": 876511,
+      "minutes": 90,
+      "score": 15,
+      "type": "interception"
+    }
+  ]
+}

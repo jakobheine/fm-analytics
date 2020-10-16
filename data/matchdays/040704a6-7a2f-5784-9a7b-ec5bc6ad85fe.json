@@ -129,129 +129,6 @@
     {
       "clubs": {
         "away": {
-          "id": "4b2b1b8b-a72c-5732-b3b0-fb9ef6459716",
-          "starting_lineup": [
-            "25c8fb50-e6ca-5502-866a-6e9a272a5cf7",
-            "c3b01952-6032-5702-b62f-105008052d2a",
-            "e4ce642c-9dca-5a81-b0de-19404689630d",
-            "6646e30f-4c33-5bf8-950d-0bf23d1e4ddf",
-            "aea9cbeb-21e4-5a62-a56c-11d8dce1cf75",
-            "12163b68-aae8-5791-9030-281573b56b75",
-            "8fb54842-f989-5dfd-bd45-9b65c40d67bc",
-            "3cd39816-1e7a-5f3e-bf53-778168d29f53",
-            "d8d004c9-113c-5b6c-94c1-179415716795",
-            "35534bc0-d119-5e70-8dc4-79c633b25762",
-            "d49e4f1a-97f2-5eef-9c59-ffa01d4765e1"
-          ],
-          "substitutes": [
-            "dd665e47-2a62-5082-8e8b-fb0e3f504d9a",
-            "614a2d8f-0a5d-5872-8fce-bef1386852e6",
-            "0aa79558-7599-5418-9e6e-dbfebabc2b4e",
-            "bce28531-8ae0-5452-871b-5fbbab012bc8",
-            "8115e708-b7a0-506a-8e78-8387ae460bb7",
-            "1416a0e5-8fd1-5b65-b850-edc5ff040075",
-            "437e3a8a-db4c-5e7c-8468-1676e6c724ce",
-            "8d29bec2-cd66-504c-a4e1-8707d700329a",
-            "70237e16-b51c-530c-9448-e6d9c20c0d15"
-          ],
-          "substitutions": [
-            {
-              "additional_minutes": 0,
-              "minutes": 70,
-              "off": "3cd39816-1e7a-5f3e-bf53-778168d29f53",
-              "on": "614a2d8f-0a5d-5872-8fce-bef1386852e6"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 78,
-              "off": "d8d004c9-113c-5b6c-94c1-179415716795",
-              "on": "70237e16-b51c-530c-9448-e6d9c20c0d15"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 89,
-              "off": "d49e4f1a-97f2-5eef-9c59-ffa01d4765e1",
-              "on": "dd665e47-2a62-5082-8e8b-fb0e3f504d9a"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 89,
-              "off": "35534bc0-d119-5e70-8dc4-79c633b25762",
-              "on": "437e3a8a-db4c-5e7c-8468-1676e6c724ce"
-            }
-          ]
-        },
-        "home": {
-          "id": "cf742159-06c0-554e-8479-a1a5700445bb",
-          "starting_lineup": [
-            "712d4223-a5db-5d25-8437-651f048eea3d",
-            "a045cdad-da58-57d8-953b-146a20fdfa9b",
-            "0a023940-450f-5002-bc39-25214c9e0f8c",
-            "2b666704-b606-50a2-bc17-64b9f525d326",
-            "d7595607-ff16-543e-834f-252dd82e6872",
-            "ffccb82a-4b24-5967-aef3-737b814755b8",
-            "099ba1d8-2f47-5462-810d-123b54c566e1",
-            "bde9a638-f767-56e3-968b-c4be2218bce4",
-            "e6e2f3da-da89-5a30-8f63-50c303d8a1f0",
-            "c557ffba-b97e-58d6-91d0-4af5d50effbb",
-            "67fc4087-005b-5233-b126-dc29478dacb2"
-          ],
-          "substitutes": [
-            "2c7ba2cf-b810-5a8a-a98e-baeea9e81639",
-            "2e26ea1d-8163-5538-9468-7cce3792aef3",
-            "ddb86b2a-576f-5f02-ab88-1c022e6149f9",
-            "03bad759-d400-554d-b5ab-3a5386fb7402",
-            "2ba5fc4f-936d-53f2-ab30-e0be364239cc",
-            "138cd6ef-ba1b-5ca2-adcb-9349a2f3a10b",
-            "1a237602-6b2e-5b9f-9f2e-dd2a42dfb4ec",
-            "729c730a-73cb-51a1-a5bd-d4533659385b",
-            "f31f7434-27d1-5ce4-add0-e051b4c5538d"
-          ],
-          "substitutions": [
-            {
-              "additional_minutes": 0,
-              "minutes": 47,
-              "off": "a045cdad-da58-57d8-953b-146a20fdfa9b",
-              "on": "1a237602-6b2e-5b9f-9f2e-dd2a42dfb4ec"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 67,
-              "off": "e6e2f3da-da89-5a30-8f63-50c303d8a1f0",
-              "on": "2ba5fc4f-936d-53f2-ab30-e0be364239cc"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 78,
-              "off": "bde9a638-f767-56e3-968b-c4be2218bce4",
-              "on": "138cd6ef-ba1b-5ca2-adcb-9349a2f3a10b"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 78,
-              "off": "67fc4087-005b-5233-b126-dc29478dacb2",
-              "on": "2c7ba2cf-b810-5a8a-a98e-baeea9e81639"
-            },
-            {
-              "additional_minutes": 0,
-              "minutes": 87,
-              "off": "099ba1d8-2f47-5462-810d-123b54c566e1",
-              "on": "ddb86b2a-576f-5f02-ab88-1c022e6149f9"
-            }
-          ]
-        }
-      },
-      "end": "2020-10-03T15:15:00Z",
-      "id": "af3a4363-972c-57b8-ac00-e0f560d3aafc",
-      "result": {
-        "away": 3,
-        "home": 1
-      },
-      "start": "2020-10-03T13:30:00Z"
-    },
-    {
-      "clubs": {
-        "away": {
           "id": "abee2e16-c361-5d60-93ac-437af3739580",
           "starting_lineup": [
             "90bd6d09-0f12-5a94-b1a9-97bce8d5f402",
@@ -374,6 +251,129 @@
       "id": "5e546187-931f-5e08-9d61-a66d23173871",
       "result": {
         "away": 1,
+        "home": 1
+      },
+      "start": "2020-10-03T13:30:00Z"
+    },
+    {
+      "clubs": {
+        "away": {
+          "id": "4b2b1b8b-a72c-5732-b3b0-fb9ef6459716",
+          "starting_lineup": [
+            "25c8fb50-e6ca-5502-866a-6e9a272a5cf7",
+            "c3b01952-6032-5702-b62f-105008052d2a",
+            "e4ce642c-9dca-5a81-b0de-19404689630d",
+            "6646e30f-4c33-5bf8-950d-0bf23d1e4ddf",
+            "aea9cbeb-21e4-5a62-a56c-11d8dce1cf75",
+            "12163b68-aae8-5791-9030-281573b56b75",
+            "8fb54842-f989-5dfd-bd45-9b65c40d67bc",
+            "3cd39816-1e7a-5f3e-bf53-778168d29f53",
+            "d8d004c9-113c-5b6c-94c1-179415716795",
+            "35534bc0-d119-5e70-8dc4-79c633b25762",
+            "d49e4f1a-97f2-5eef-9c59-ffa01d4765e1"
+          ],
+          "substitutes": [
+            "dd665e47-2a62-5082-8e8b-fb0e3f504d9a",
+            "614a2d8f-0a5d-5872-8fce-bef1386852e6",
+            "0aa79558-7599-5418-9e6e-dbfebabc2b4e",
+            "bce28531-8ae0-5452-871b-5fbbab012bc8",
+            "8115e708-b7a0-506a-8e78-8387ae460bb7",
+            "1416a0e5-8fd1-5b65-b850-edc5ff040075",
+            "437e3a8a-db4c-5e7c-8468-1676e6c724ce",
+            "8d29bec2-cd66-504c-a4e1-8707d700329a",
+            "70237e16-b51c-530c-9448-e6d9c20c0d15"
+          ],
+          "substitutions": [
+            {
+              "additional_minutes": 0,
+              "minutes": 70,
+              "off": "3cd39816-1e7a-5f3e-bf53-778168d29f53",
+              "on": "614a2d8f-0a5d-5872-8fce-bef1386852e6"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 78,
+              "off": "d8d004c9-113c-5b6c-94c1-179415716795",
+              "on": "70237e16-b51c-530c-9448-e6d9c20c0d15"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 89,
+              "off": "d49e4f1a-97f2-5eef-9c59-ffa01d4765e1",
+              "on": "dd665e47-2a62-5082-8e8b-fb0e3f504d9a"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 89,
+              "off": "35534bc0-d119-5e70-8dc4-79c633b25762",
+              "on": "437e3a8a-db4c-5e7c-8468-1676e6c724ce"
+            }
+          ]
+        },
+        "home": {
+          "id": "cf742159-06c0-554e-8479-a1a5700445bb",
+          "starting_lineup": [
+            "712d4223-a5db-5d25-8437-651f048eea3d",
+            "a045cdad-da58-57d8-953b-146a20fdfa9b",
+            "0a023940-450f-5002-bc39-25214c9e0f8c",
+            "2b666704-b606-50a2-bc17-64b9f525d326",
+            "d7595607-ff16-543e-834f-252dd82e6872",
+            "ffccb82a-4b24-5967-aef3-737b814755b8",
+            "099ba1d8-2f47-5462-810d-123b54c566e1",
+            "bde9a638-f767-56e3-968b-c4be2218bce4",
+            "e6e2f3da-da89-5a30-8f63-50c303d8a1f0",
+            "c557ffba-b97e-58d6-91d0-4af5d50effbb",
+            "67fc4087-005b-5233-b126-dc29478dacb2"
+          ],
+          "substitutes": [
+            "2c7ba2cf-b810-5a8a-a98e-baeea9e81639",
+            "2e26ea1d-8163-5538-9468-7cce3792aef3",
+            "ddb86b2a-576f-5f02-ab88-1c022e6149f9",
+            "03bad759-d400-554d-b5ab-3a5386fb7402",
+            "2ba5fc4f-936d-53f2-ab30-e0be364239cc",
+            "138cd6ef-ba1b-5ca2-adcb-9349a2f3a10b",
+            "1a237602-6b2e-5b9f-9f2e-dd2a42dfb4ec",
+            "729c730a-73cb-51a1-a5bd-d4533659385b",
+            "f31f7434-27d1-5ce4-add0-e051b4c5538d"
+          ],
+          "substitutions": [
+            {
+              "additional_minutes": 0,
+              "minutes": 47,
+              "off": "a045cdad-da58-57d8-953b-146a20fdfa9b",
+              "on": "1a237602-6b2e-5b9f-9f2e-dd2a42dfb4ec"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 67,
+              "off": "e6e2f3da-da89-5a30-8f63-50c303d8a1f0",
+              "on": "2ba5fc4f-936d-53f2-ab30-e0be364239cc"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 78,
+              "off": "bde9a638-f767-56e3-968b-c4be2218bce4",
+              "on": "138cd6ef-ba1b-5ca2-adcb-9349a2f3a10b"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 78,
+              "off": "67fc4087-005b-5233-b126-dc29478dacb2",
+              "on": "2c7ba2cf-b810-5a8a-a98e-baeea9e81639"
+            },
+            {
+              "additional_minutes": 0,
+              "minutes": 87,
+              "off": "099ba1d8-2f47-5462-810d-123b54c566e1",
+              "on": "ddb86b2a-576f-5f02-ab88-1c022e6149f9"
+            }
+          ]
+        }
+      },
+      "end": "2020-10-03T15:15:00Z",
+      "id": "af3a4363-972c-57b8-ac00-e0f560d3aafc",
+      "result": {
+        "away": 3,
         "home": 1
       },
       "start": "2020-10-03T13:30:00Z"

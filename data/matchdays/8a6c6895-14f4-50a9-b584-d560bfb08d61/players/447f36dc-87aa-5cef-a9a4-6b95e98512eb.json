@@ -1,0 +1,48 @@
+{
+  "aggregated_events": [
+    {
+      "occurrences": 1,
+      "score": 2,
+      "type": "pass"
+    },
+    {
+      "occurrences": 1,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "occurrences": 1,
+      "score": 50,
+      "type": "shotAtGoal"
+    }
+  ],
+  "events": [
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-26T18:19:30Z",
+      "id": 864775,
+      "minutes": 87,
+      "score": 0,
+      "type": "playerOn"
+    },
+    {
+      "additional_minutes": 0,
+      "corrected": false,
+      "datetime": "2020-09-26T18:22:31Z",
+      "id": 864796,
+      "minutes": 89,
+      "score": 50,
+      "type": "shotAtGoal"
+    },
+    {
+      "additional_minutes": 1,
+      "corrected": false,
+      "datetime": "2020-09-26T18:22:31Z",
+      "id": 864817,
+      "minutes": 90,
+      "score": 2,
+      "type": "pass"
+    }
+  ]
+}
