@@ -1,16 +1,16 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 37,
+      "event_count": 51,
       "events": [
         {
-          "occurrences": 24,
-          "score": 48,
+          "occurrences": 30,
+          "score": 60,
           "type": "pass"
         },
         {
-          "occurrences": 6,
-          "score": -12,
+          "occurrences": 11,
+          "score": -22,
           "type": "unsuccessfulPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 4,
-          "score": 60,
+          "occurrences": 6,
+          "score": 90,
           "type": "interception"
         },
         {
@@ -39,13 +39,13 @@
           "type": "freeKick"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": 12,
           "type": "farCorner"
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 122
+      "total_score": 166
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 250
     },
     {
-      "event_count": 15,
+      "event_count": 26,
       "events": [
         {
-          "occurrences": 6,
-          "score": 90,
+          "occurrences": 13,
+          "score": 195,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 8,
-          "score": -80,
+          "occurrences": 12,
+          "score": -120,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 30
+      "total_score": 95
     },
     {
       "event_count": 0,
@@ -221,12 +221,16 @@
     {
       "matchday": 3,
       "score": 127
+    },
+    {
+      "matchday": 4,
+      "score": 109
     }
   ],
   "statistics": {
     "matches_in_starting_lineup": 1,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.42857142857142855,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.52,
     "top_events": [
       {
         "occurrences": 1,
@@ -249,6 +253,6 @@
         "type": "shotAtGoal"
       }
     ],
-    "utilization_rate": 0.6666666666666666
+    "utilization_rate": 0.75
   }
 }

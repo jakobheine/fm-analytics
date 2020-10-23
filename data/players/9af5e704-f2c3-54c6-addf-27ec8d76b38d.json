@@ -1,26 +1,26 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 312,
+      "event_count": 370,
       "events": [
         {
-          "occurrences": 250,
-          "score": 500,
+          "occurrences": 288,
+          "score": 576,
           "type": "pass"
         },
         {
-          "occurrences": 27,
-          "score": -54,
+          "occurrences": 39,
+          "score": -78,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 12,
-          "score": 144,
+          "occurrences": 15,
+          "score": 180,
           "type": "superPass"
         },
         {
-          "occurrences": 1,
-          "score": 2,
+          "occurrences": 2,
+          "score": 4,
           "type": "throwIn"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 17,
-          "score": 255,
+          "occurrences": 21,
+          "score": 315,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 937
+      "total_score": 1087
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 250
     },
     {
-      "event_count": 20,
+      "event_count": 28,
       "events": [
         {
-          "occurrences": 13,
-          "score": 195,
+          "occurrences": 19,
+          "score": 285,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 7,
-          "score": -70,
+          "occurrences": 9,
+          "score": -90,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 125
+      "total_score": 195
     },
     {
       "event_count": 7,
@@ -221,12 +221,16 @@
     {
       "matchday": 3,
       "score": 544
+    },
+    {
+      "matchday": 4,
+      "score": 220
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 3,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.65,
+    "matches_in_starting_lineup": 4,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.6785714285714286,
     "top_events": [
       {
         "occurrences": 1,

@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 127,
+      "event_count": 161,
       "events": [
         {
-          "occurrences": 94,
-          "score": 188,
+          "occurrences": 115,
+          "score": 230,
           "type": "pass"
         },
         {
-          "occurrences": 14,
-          "score": -28,
+          "occurrences": 22,
+          "score": -44,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 17,
-          "score": 204,
+          "occurrences": 22,
+          "score": 264,
           "type": "superPass"
         },
         {
@@ -45,14 +45,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 394
+      "total_score": 480
     },
     {
-      "event_count": 9,
+      "event_count": 15,
       "events": [
         {
-          "occurrences": 4,
-          "score": 120,
+          "occurrences": 9,
+          "score": 270,
           "type": "defended"
         },
         {
@@ -61,8 +61,8 @@
           "type": "savedPenalty"
         },
         {
-          "occurrences": 4,
-          "score": -100,
+          "occurrences": 5,
+          "score": -125,
           "type": "goalAgainst"
         },
         {
@@ -72,7 +72,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_goalkeeping",
-      "total_score": 0
+      "total_score": 125
     },
     {
       "event_count": 0,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 234
+    },
+    {
+      "matchday": 4,
+      "score": 211
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 3,
-    "matches_total": 3,
+    "matches_in_starting_lineup": 4,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
-        "occurrences": 4,
-        "score": 120,
+        "occurrences": 9,
+        "score": 270,
         "type": "defended"
       },
       {
@@ -239,8 +243,8 @@
         "type": "savedPenalty"
       },
       {
-        "occurrences": 17,
-        "score": 204,
+        "occurrences": 22,
+        "score": 264,
         "type": "superPass"
       },
       {

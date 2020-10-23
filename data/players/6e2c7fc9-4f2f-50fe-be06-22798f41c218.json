@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 178,
+      "event_count": 236,
       "events": [
         {
-          "occurrences": 130,
-          "score": 260,
+          "occurrences": 177,
+          "score": 354,
           "type": "pass"
         },
         {
-          "occurrences": 25,
-          "score": -50,
+          "occurrences": 33,
+          "score": -66,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 10,
-          "score": 120,
+          "occurrences": 11,
+          "score": 132,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 9,
-          "score": 135,
+          "occurrences": 11,
+          "score": 165,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 473
+      "total_score": 593
     },
     {
       "event_count": 0,
@@ -137,11 +137,11 @@
       "total_score": -40
     },
     {
-      "event_count": 9,
+      "event_count": 11,
       "events": [
         {
-          "occurrences": 4,
-          "score": 60,
+          "occurrences": 6,
+          "score": 90,
           "type": "successfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 40
+      "total_score": 70
     },
     {
       "event_count": 2,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 30
+    },
+    {
+      "matchday": 4,
+      "score": 150
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 2,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.5,
+    "matches_in_starting_lineup": 3,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.6,
     "top_events": [
       {
-        "occurrences": 9,
-        "score": 135,
+        "occurrences": 11,
+        "score": 165,
         "type": "interception"
       },
       {

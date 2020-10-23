@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 35,
+      "event_count": 74,
       "events": [
         {
-          "occurrences": 26,
-          "score": 52,
+          "occurrences": 45,
+          "score": 90,
           "type": "pass"
         },
         {
-          "occurrences": 3,
-          "score": -6,
+          "occurrences": 10,
+          "score": -20,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 6,
-          "score": 72,
+          "occurrences": 15,
+          "score": 180,
           "type": "superPass"
         },
         {
@@ -29,13 +29,13 @@
           "type": "cross"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 3,
+          "score": 45,
           "type": "interception"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": 12,
           "type": "freeKick"
         },
         {
@@ -45,14 +45,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 118
+      "total_score": 307
     },
     {
-      "event_count": 3,
+      "event_count": 6,
       "events": [
         {
-          "occurrences": 3,
-          "score": 90,
+          "occurrences": 6,
+          "score": 180,
           "type": "defended"
         },
         {
@@ -72,7 +72,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_goalkeeping",
-      "total_score": 90
+      "total_score": 180
     },
     {
       "event_count": 0,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 208
+    },
+    {
+      "matchday": 4,
+      "score": 279
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 1,
-    "matches_total": 3,
+    "matches_in_starting_lineup": 2,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
-        "occurrences": 3,
-        "score": 90,
+        "occurrences": 6,
+        "score": 180,
         "type": "defended"
       },
       {
@@ -239,8 +243,8 @@
         "type": "savedPenalty"
       },
       {
-        "occurrences": 6,
-        "score": 72,
+        "occurrences": 15,
+        "score": 180,
         "type": "superPass"
       },
       {
@@ -249,6 +253,6 @@
         "type": "causedPenalty"
       }
     ],
-    "utilization_rate": 0.3333333333333333
+    "utilization_rate": 0.5
   }
 }

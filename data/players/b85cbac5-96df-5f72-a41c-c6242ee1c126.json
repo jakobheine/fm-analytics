@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 150,
+      "event_count": 192,
       "events": [
         {
-          "occurrences": 77,
-          "score": 154,
+          "occurrences": 100,
+          "score": 200,
           "type": "pass"
         },
         {
-          "occurrences": 30,
-          "score": -60,
+          "occurrences": 38,
+          "score": -76,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 11,
-          "score": 132,
+          "occurrences": 13,
+          "score": 156,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 32,
-          "score": 480,
+          "occurrences": 41,
+          "score": 615,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 706
+      "total_score": 895
     },
     {
       "event_count": 0,
@@ -137,11 +137,11 @@
       "total_score": 0
     },
     {
-      "event_count": 20,
+      "event_count": 21,
       "events": [
         {
-          "occurrences": 13,
-          "score": 195,
+          "occurrences": 14,
+          "score": 210,
           "type": "successfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 155
+      "total_score": 170
     },
     {
       "event_count": 7,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 249
+    },
+    {
+      "matchday": 4,
+      "score": 204
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 3,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.6842105263157895,
+    "matches_in_starting_lineup": 4,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.7,
     "top_events": [
       {
-        "occurrences": 32,
-        "score": 480,
+        "occurrences": 41,
+        "score": 615,
         "type": "interception"
       },
       {

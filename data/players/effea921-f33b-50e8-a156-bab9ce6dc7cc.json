@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 173,
+      "event_count": 209,
       "events": [
         {
-          "occurrences": 111,
-          "score": 222,
+          "occurrences": 139,
+          "score": 278,
           "type": "pass"
         },
         {
-          "occurrences": 35,
-          "score": -70,
+          "occurrences": 40,
+          "score": -80,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 6,
-          "score": 72,
+          "occurrences": 7,
+          "score": 84,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 20,
-          "score": 300,
+          "occurrences": 22,
+          "score": 330,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 536
+      "total_score": 624
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 100
     },
     {
-      "event_count": 32,
+      "event_count": 41,
       "events": [
         {
-          "occurrences": 18,
-          "score": 270,
+          "occurrences": 22,
+          "score": 330,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 13,
-          "score": -130,
+          "occurrences": 18,
+          "score": -180,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,10 +166,10 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 160
+      "total_score": 170
     },
     {
-      "event_count": 7,
+      "event_count": 8,
       "events": [
         {
           "occurrences": 5,
@@ -182,8 +182,8 @@
           "type": "causedPenalty"
         },
         {
-          "occurrences": 2,
-          "score": -60,
+          "occurrences": 3,
+          "score": -90,
           "type": "yellowCard"
         },
         {
@@ -198,7 +198,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_discipline",
-      "total_score": -135
+      "total_score": -165
     }
   ],
   "information": {
@@ -221,12 +221,16 @@
     {
       "matchday": 3,
       "score": 231
+    },
+    {
+      "matchday": 4,
+      "score": 68
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 3,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.5806451612903226,
+    "matches_in_starting_lineup": 4,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.55,
     "top_events": [
       {
         "occurrences": 0,

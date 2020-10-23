@@ -1,16 +1,16 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 25,
+      "event_count": 44,
       "events": [
         {
-          "occurrences": 14,
-          "score": 28,
+          "occurrences": 28,
+          "score": 56,
           "type": "pass"
         },
         {
-          "occurrences": 7,
-          "score": -14,
+          "occurrences": 9,
+          "score": -18,
           "type": "unsuccessfulPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 1,
-          "score": 15,
+          "occurrences": 4,
+          "score": 60,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 77
+      "total_score": 146
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 260
     },
     {
-      "event_count": 12,
+      "event_count": 18,
       "events": [
         {
-          "occurrences": 8,
-          "score": 120,
+          "occurrences": 10,
+          "score": 150,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 4,
-          "score": -40,
+          "occurrences": 8,
+          "score": -80,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 80
+      "total_score": 70
     },
     {
       "event_count": 2,
@@ -221,11 +221,15 @@
     {
       "matchday": 3,
       "score": 58
+    },
+    {
+      "matchday": 4,
+      "score": 59
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 0,
-    "matches_total": 3,
+    "matches_in_starting_lineup": 1,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {

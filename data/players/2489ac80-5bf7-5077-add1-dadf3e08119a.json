@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 154,
+      "event_count": 183,
       "events": [
         {
-          "occurrences": 91,
-          "score": 182,
+          "occurrences": 111,
+          "score": 222,
           "type": "pass"
         },
         {
-          "occurrences": 39,
-          "score": -78,
+          "occurrences": 45,
+          "score": -90,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 6,
-          "score": 72,
+          "occurrences": 8,
+          "score": 96,
           "type": "superPass"
         },
         {
@@ -24,8 +24,8 @@
           "type": "throwIn"
         },
         {
-          "occurrences": 1,
-          "score": 18,
+          "occurrences": 2,
+          "score": 36,
           "type": "cross"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 422
+      "total_score": 492
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 160
     },
     {
-      "event_count": 28,
+      "event_count": 33,
       "events": [
         {
-          "occurrences": 15,
-          "score": 225,
+          "occurrences": 16,
+          "score": 240,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 12,
-          "score": -120,
+          "occurrences": 16,
+          "score": -160,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,14 +166,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 125
+      "total_score": 100
     },
     {
-      "event_count": 6,
+      "event_count": 7,
       "events": [
         {
-          "occurrences": 5,
-          "score": -75,
+          "occurrences": 6,
+          "score": -90,
           "type": "foul"
         },
         {
@@ -198,7 +198,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_discipline",
-      "total_score": -105
+      "total_score": -120
     }
   ],
   "information": {
@@ -221,12 +221,16 @@
     {
       "matchday": 3,
       "score": 99
+    },
+    {
+      "matchday": 4,
+      "score": 30
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 3,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.5555555555555556,
+    "matches_in_starting_lineup": 4,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.5,
     "top_events": [
       {
         "occurrences": 1,

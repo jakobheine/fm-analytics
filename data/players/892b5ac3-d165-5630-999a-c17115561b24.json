@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 56,
+      "event_count": 72,
       "events": [
         {
-          "occurrences": 31,
-          "score": 62,
+          "occurrences": 41,
+          "score": 82,
           "type": "pass"
         },
         {
-          "occurrences": 15,
-          "score": -30,
+          "occurrences": 19,
+          "score": -38,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 3,
-          "score": 36,
+          "occurrences": 5,
+          "score": 60,
           "type": "superPass"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 170
+      "total_score": 206
     },
     {
       "event_count": 0,
@@ -75,7 +75,7 @@
       "total_score": 0
     },
     {
-      "event_count": 1,
+      "event_count": 2,
       "events": [
         {
           "occurrences": 0,
@@ -103,8 +103,8 @@
           "type": "shotAtGoal"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -20,
           "type": "goalMissedFar"
         },
         {
@@ -134,7 +134,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_attack",
-      "total_score": 50
+      "total_score": 30
     },
     {
       "event_count": 11,
@@ -221,11 +221,15 @@
     {
       "matchday": 3,
       "score": 24
+    },
+    {
+      "matchday": 4,
+      "score": 16
     }
   ],
   "statistics": {
     "matches_in_starting_lineup": 1,
-    "matches_total": 3,
+    "matches_total": 4,
     "successful_tackle_rate": 0.6,
     "top_events": [
       {

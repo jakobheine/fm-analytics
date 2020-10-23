@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 156,
+      "event_count": 252,
       "events": [
         {
-          "occurrences": 111,
-          "score": 222,
+          "occurrences": 192,
+          "score": 384,
           "type": "pass"
         },
         {
-          "occurrences": 26,
-          "score": -52,
+          "occurrences": 32,
+          "score": -64,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 11,
-          "score": 132,
+          "occurrences": 15,
+          "score": 180,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 7,
-          "score": 105,
+          "occurrences": 12,
+          "score": 180,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 409
+      "total_score": 682
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 50
     },
     {
-      "event_count": 8,
+      "event_count": 14,
       "events": [
         {
-          "occurrences": 4,
-          "score": 60,
+          "occurrences": 9,
+          "score": 135,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 2,
-          "score": -20,
+          "occurrences": 3,
+          "score": -30,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 80
+      "total_score": 145
     },
     {
       "event_count": 4,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 236
+    },
+    {
+      "matchday": 4,
+      "score": 338
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 2,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.6666666666666666,
+    "matches_in_starting_lineup": 3,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.75,
     "top_events": [
       {
-        "occurrences": 7,
-        "score": 105,
+        "occurrences": 12,
+        "score": 180,
         "type": "interception"
       },
       {
@@ -244,6 +248,6 @@
         "type": "foul"
       }
     ],
-    "utilization_rate": 0.6666666666666666
+    "utilization_rate": 0.75
   }
 }

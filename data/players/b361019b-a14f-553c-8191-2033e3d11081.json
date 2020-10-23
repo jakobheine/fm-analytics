@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 0,
+      "event_count": 16,
       "events": [
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 9,
+          "score": 18,
           "type": "pass"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 4,
+          "score": -8,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": 12,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": 15,
           "type": "interception"
         },
         {
@@ -39,13 +39,13 @@
           "type": "freeKick"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": 12,
           "type": "farCorner"
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 0
+      "total_score": 49
     },
     {
       "event_count": 0,
@@ -137,7 +137,7 @@
       "total_score": 0
     },
     {
-      "event_count": 0,
+      "event_count": 1,
       "events": [
         {
           "occurrences": 0,
@@ -145,8 +145,8 @@
           "type": "successfulTackle"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -10,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,14 +166,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 0
+      "total_score": -10
     },
     {
-      "event_count": 0,
+      "event_count": 1,
       "events": [
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -15,
           "type": "foul"
         },
         {
@@ -198,7 +198,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_discipline",
-      "total_score": 0
+      "total_score": -15
     }
   ],
   "information": {
@@ -221,11 +221,15 @@
     {
       "matchday": 3,
       "score": 0
+    },
+    {
+      "matchday": 4,
+      "score": 24
     }
   ],
   "statistics": {
     "matches_in_starting_lineup": 0,
-    "matches_total": 3,
+    "matches_total": 4,
     "successful_tackle_rate": 0.0,
     "top_events": [
       {
@@ -249,6 +253,6 @@
         "type": "shotAtGoal"
       }
     ],
-    "utilization_rate": 0.0
+    "utilization_rate": 0.25
   }
 }

@@ -1,16 +1,16 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 30,
+      "event_count": 53,
       "events": [
         {
-          "occurrences": 14,
-          "score": 28,
+          "occurrences": 28,
+          "score": 56,
           "type": "pass"
         },
         {
-          "occurrences": 12,
-          "score": -24,
+          "occurrences": 19,
+          "score": -38,
           "type": "unsuccessfulPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 3,
-          "score": 45,
+          "occurrences": 5,
+          "score": 75,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 51
+      "total_score": 95
     },
     {
       "event_count": 0,
@@ -75,7 +75,7 @@
       "total_score": 0
     },
     {
-      "event_count": 1,
+      "event_count": 3,
       "events": [
         {
           "occurrences": 0,
@@ -98,8 +98,8 @@
           "type": "hattrick"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 2,
+          "score": 100,
           "type": "shotAtGoal"
         },
         {
@@ -134,19 +134,19 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_attack",
-      "total_score": 100
+      "total_score": 200
     },
     {
-      "event_count": 6,
+      "event_count": 11,
       "events": [
         {
-          "occurrences": 4,
-          "score": 60,
+          "occurrences": 6,
+          "score": 90,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 2,
-          "score": -20,
+          "occurrences": 5,
+          "score": -50,
           "type": "unsuccessfulTackle"
         },
         {
@@ -221,12 +221,16 @@
     {
       "matchday": 3,
       "score": 24
+    },
+    {
+      "matchday": 4,
+      "score": 144
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 0,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.6666666666666666,
+    "matches_in_starting_lineup": 1,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.5454545454545454,
     "top_events": [
       {
         "occurrences": 0,
@@ -244,8 +248,8 @@
         "type": "goalAssist"
       },
       {
-        "occurrences": 0,
-        "score": 0,
+        "occurrences": 2,
+        "score": 100,
         "type": "shotAtGoal"
       }
     ],

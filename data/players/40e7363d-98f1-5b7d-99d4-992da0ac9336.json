@@ -1,11 +1,11 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 7,
+      "event_count": 9,
       "events": [
         {
-          "occurrences": 4,
-          "score": 8,
+          "occurrences": 6,
+          "score": 12,
           "type": "pass"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 2
+      "total_score": 6
     },
     {
       "event_count": 0,
@@ -221,11 +221,15 @@
     {
       "matchday": 3,
       "score": 0
+    },
+    {
+      "matchday": 4,
+      "score": 4
     }
   ],
   "statistics": {
     "matches_in_starting_lineup": 0,
-    "matches_total": 3,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
@@ -254,6 +258,6 @@
         "type": "missedChance"
       }
     ],
-    "utilization_rate": 0.6666666666666666
+    "utilization_rate": 0.75
   }
 }

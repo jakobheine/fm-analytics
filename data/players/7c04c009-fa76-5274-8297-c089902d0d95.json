@@ -1,16 +1,16 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 22,
+      "event_count": 26,
       "events": [
         {
-          "occurrences": 11,
-          "score": 22,
+          "occurrences": 12,
+          "score": 24,
           "type": "pass"
         },
         {
-          "occurrences": 9,
-          "score": -18,
+          "occurrences": 10,
+          "score": -20,
           "type": "unsuccessfulPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 1,
-          "score": 15,
+          "occurrences": 2,
+          "score": 30,
           "type": "interception"
         },
         {
@@ -39,13 +39,13 @@
           "type": "freeKick"
         },
         {
-          "occurrences": 1,
-          "score": 12,
+          "occurrences": 2,
+          "score": 24,
           "type": "farCorner"
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 31
+      "total_score": 58
     },
     {
       "event_count": 0,
@@ -75,7 +75,7 @@
       "total_score": 0
     },
     {
-      "event_count": 3,
+      "event_count": 4,
       "events": [
         {
           "occurrences": 0,
@@ -98,8 +98,8 @@
           "type": "hattrick"
         },
         {
-          "occurrences": 2,
-          "score": 100,
+          "occurrences": 3,
+          "score": 150,
           "type": "shotAtGoal"
         },
         {
@@ -134,10 +134,10 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_attack",
-      "total_score": 80
+      "total_score": 130
     },
     {
-      "event_count": 7,
+      "event_count": 9,
       "events": [
         {
           "occurrences": 4,
@@ -145,8 +145,8 @@
           "type": "successfulTackle"
         },
         {
-          "occurrences": 3,
-          "score": -30,
+          "occurrences": 5,
+          "score": -50,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,14 +166,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 30
+      "total_score": 10
     },
     {
-      "event_count": 4,
+      "event_count": 5,
       "events": [
         {
-          "occurrences": 4,
-          "score": -60,
+          "occurrences": 5,
+          "score": -75,
           "type": "foul"
         },
         {
@@ -198,7 +198,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_discipline",
-      "total_score": -60
+      "total_score": -75
     }
   ],
   "information": {
@@ -221,11 +221,15 @@
     {
       "matchday": 3,
       "score": 81
+    },
+    {
+      "matchday": 4,
+      "score": 42
     }
   ],
   "statistics": {
     "matches_in_starting_lineup": 0,
-    "matches_total": 3,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
@@ -244,8 +248,8 @@
         "type": "goalAssist"
       },
       {
-        "occurrences": 2,
-        "score": 100,
+        "occurrences": 3,
+        "score": 150,
         "type": "shotAtGoal"
       },
       {

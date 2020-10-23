@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 157,
+      "event_count": 166,
       "events": [
         {
-          "occurrences": 120,
-          "score": 240,
+          "occurrences": 124,
+          "score": 248,
           "type": "pass"
         },
         {
-          "occurrences": 23,
-          "score": -46,
+          "occurrences": 25,
+          "score": -50,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 6,
-          "score": 72,
+          "occurrences": 7,
+          "score": 84,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 7,
-          "score": 105,
+          "occurrences": 9,
+          "score": 135,
           "type": "interception"
         },
         {
@@ -45,7 +45,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 383
+      "total_score": 429
     },
     {
       "event_count": 0,
@@ -137,16 +137,16 @@
       "total_score": 180
     },
     {
-      "event_count": 22,
+      "event_count": 27,
       "events": [
         {
-          "occurrences": 10,
-          "score": 150,
+          "occurrences": 14,
+          "score": 210,
           "type": "successfulTackle"
         },
         {
-          "occurrences": 11,
-          "score": -110,
+          "occurrences": 12,
+          "score": -120,
           "type": "unsuccessfulTackle"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 60
+      "total_score": 110
     },
     {
       "event_count": 3,
@@ -221,12 +221,16 @@
     {
       "matchday": 3,
       "score": 166
+    },
+    {
+      "matchday": 4,
+      "score": 96
     }
   ],
   "statistics": {
     "matches_in_starting_lineup": 3,
-    "matches_total": 3,
-    "successful_tackle_rate": 0.47619047619047616,
+    "matches_total": 4,
+    "successful_tackle_rate": 0.5384615384615384,
     "top_events": [
       {
         "occurrences": 0,

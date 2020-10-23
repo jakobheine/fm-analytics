@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 19,
+      "event_count": 58,
       "events": [
         {
-          "occurrences": 10,
-          "score": 20,
+          "occurrences": 35,
+          "score": 70,
           "type": "pass"
         },
         {
-          "occurrences": 4,
-          "score": -8,
+          "occurrences": 12,
+          "score": -24,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 5,
-          "score": 60,
+          "occurrences": 10,
+          "score": 120,
           "type": "superPass"
         },
         {
@@ -34,8 +34,8 @@
           "type": "interception"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": 12,
           "type": "freeKick"
         },
         {
@@ -45,14 +45,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 72
+      "total_score": 178
     },
     {
-      "event_count": 4,
+      "event_count": 10,
       "events": [
         {
-          "occurrences": 3,
-          "score": 90,
+          "occurrences": 8,
+          "score": 240,
           "type": "defended"
         },
         {
@@ -61,8 +61,8 @@
           "type": "savedPenalty"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -25,
           "type": "goalAgainst"
         },
         {
@@ -72,7 +72,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_goalkeeping",
-      "total_score": 70
+      "total_score": 195
     },
     {
       "event_count": 0,
@@ -137,7 +137,7 @@
       "total_score": 0
     },
     {
-      "event_count": 0,
+      "event_count": 1,
       "events": [
         {
           "occurrences": 0,
@@ -155,8 +155,8 @@
           "type": "blockedGoalShot"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -40,
           "type": "error"
         },
         {
@@ -166,7 +166,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_defense",
-      "total_score": 0
+      "total_score": -40
     },
     {
       "event_count": 0,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 142
+    },
+    {
+      "matchday": 4,
+      "score": 191
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 0,
-    "matches_total": 3,
+    "matches_in_starting_lineup": 1,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
-        "occurrences": 3,
-        "score": 90,
+        "occurrences": 8,
+        "score": 240,
         "type": "defended"
       },
       {
@@ -239,8 +243,8 @@
         "type": "savedPenalty"
       },
       {
-        "occurrences": 5,
-        "score": 60,
+        "occurrences": 10,
+        "score": 120,
         "type": "superPass"
       },
       {
@@ -249,6 +253,6 @@
         "type": "causedPenalty"
       }
     ],
-    "utilization_rate": 0.3333333333333333
+    "utilization_rate": 0.5
   }
 }

@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 79,
+      "event_count": 127,
       "events": [
         {
-          "occurrences": 44,
-          "score": 88,
+          "occurrences": 66,
+          "score": 132,
           "type": "pass"
         },
         {
-          "occurrences": 21,
-          "score": -42,
+          "occurrences": 35,
+          "score": -70,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 11,
-          "score": 132,
+          "occurrences": 23,
+          "score": 276,
           "type": "superPass"
         },
         {
@@ -45,14 +45,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 223
+      "total_score": 383
     },
     {
-      "event_count": 4,
+      "event_count": 6,
       "events": [
         {
-          "occurrences": 4,
-          "score": 120,
+          "occurrences": 5,
+          "score": 150,
           "type": "defended"
         },
         {
@@ -66,13 +66,13 @@
           "type": "goalAgainst"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -20,
           "type": "lostPenalty"
         }
       ],
       "localized_title_key": "player_detail_event_section_goalkeeping",
-      "total_score": 120
+      "total_score": 130
     },
     {
       "event_count": 0,
@@ -169,7 +169,7 @@
       "total_score": 5
     },
     {
-      "event_count": 0,
+      "event_count": 1,
       "events": [
         {
           "occurrences": 0,
@@ -177,8 +177,8 @@
           "type": "foul"
         },
         {
-          "occurrences": 0,
-          "score": 0,
+          "occurrences": 1,
+          "score": -40,
           "type": "causedPenalty"
         },
         {
@@ -198,7 +198,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_discipline",
-      "total_score": 0
+      "total_score": -40
     }
   ],
   "information": {
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 100
+    },
+    {
+      "matchday": 4,
+      "score": 130
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 2,
-    "matches_total": 3,
+    "matches_in_starting_lineup": 3,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
-        "occurrences": 4,
-        "score": 120,
+        "occurrences": 5,
+        "score": 150,
         "type": "defended"
       },
       {
@@ -239,16 +243,16 @@
         "type": "savedPenalty"
       },
       {
-        "occurrences": 11,
-        "score": 132,
+        "occurrences": 23,
+        "score": 276,
         "type": "superPass"
       },
       {
-        "occurrences": 0,
-        "score": 0,
+        "occurrences": 1,
+        "score": -40,
         "type": "causedPenalty"
       }
     ],
-    "utilization_rate": 0.6666666666666666
+    "utilization_rate": 0.75
   }
 }

@@ -1,21 +1,21 @@
 {
   "aggregated_event_sections": [
     {
-      "event_count": 154,
+      "event_count": 204,
       "events": [
         {
-          "occurrences": 65,
-          "score": 130,
+          "occurrences": 96,
+          "score": 192,
           "type": "pass"
         },
         {
-          "occurrences": 53,
-          "score": -106,
+          "occurrences": 64,
+          "score": -128,
           "type": "unsuccessfulPass"
         },
         {
-          "occurrences": 30,
-          "score": 360,
+          "occurrences": 37,
+          "score": 444,
           "type": "superPass"
         },
         {
@@ -29,8 +29,8 @@
           "type": "cross"
         },
         {
-          "occurrences": 6,
-          "score": 90,
+          "occurrences": 7,
+          "score": 105,
           "type": "interception"
         },
         {
@@ -45,14 +45,14 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_passing",
-      "total_score": 474
+      "total_score": 613
     },
     {
-      "event_count": 17,
+      "event_count": 21,
       "events": [
         {
-          "occurrences": 12,
-          "score": 360,
+          "occurrences": 15,
+          "score": 450,
           "type": "defended"
         },
         {
@@ -61,8 +61,8 @@
           "type": "savedPenalty"
         },
         {
-          "occurrences": 5,
-          "score": -125,
+          "occurrences": 6,
+          "score": -150,
           "type": "goalAgainst"
         },
         {
@@ -72,7 +72,7 @@
         }
       ],
       "localized_title_key": "player_detail_event_section_goalkeeping",
-      "total_score": 235
+      "total_score": 300
     },
     {
       "event_count": 0,
@@ -221,16 +221,20 @@
     {
       "matchday": 3,
       "score": 290
+    },
+    {
+      "matchday": 4,
+      "score": 204
     }
   ],
   "statistics": {
-    "matches_in_starting_lineup": 3,
-    "matches_total": 3,
+    "matches_in_starting_lineup": 4,
+    "matches_total": 4,
     "successful_tackle_rate": null,
     "top_events": [
       {
-        "occurrences": 12,
-        "score": 360,
+        "occurrences": 15,
+        "score": 450,
         "type": "defended"
       },
       {
@@ -239,8 +243,8 @@
         "type": "savedPenalty"
       },
       {
-        "occurrences": 30,
-        "score": 360,
+        "occurrences": 37,
+        "score": 444,
         "type": "superPass"
       },
       {
