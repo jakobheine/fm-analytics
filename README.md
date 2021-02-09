@@ -2,6 +2,12 @@
 
 ## Setup
 
+Activate venv:
+
+```
+source venv/bin/activate
+```
+
 Install pip-tools:
 
 ```

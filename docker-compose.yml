@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+  database:
+    image: postgres
+    env_file:
+      - database.env
+    volumes:
+      - database-data:/var/lib/postgresql/data
+    ports:
+      - 127.0.0.1:5432:5432
+      
   proxy:
     image: laureichardt/public:proxy_0.0.1
     container_name: proxy
@@ -9,3 +18,8 @@ services:
       - TORS=8
     ports:
       - 127.0.0.1:8118:8118
+
+volumes:
+  database-data:
+
+
