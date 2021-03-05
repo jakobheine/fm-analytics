@@ -30,3 +30,4 @@ inner join players p on p.id = events.player_id
 
 df = pd.read_sql_query(SQL_QUERY, db)
 df
+# %%
