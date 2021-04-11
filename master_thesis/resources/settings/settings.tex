@@ -1,0 +1,59 @@
+% scrbook
+\documentclass[chapterprefix=true, 12pt, a4paper, oneside, parskip=half, listof=totoc, bibliography=totoc, numbers=noendperiod]{scrbook}
+
+% margin
+\usepackage[bottom=48mm,left=25mm,right=25mm]{geometry}
+
+\usepackage{import}
+
+% tweaks for scrbook
+\usepackage{scrhack}
+
+\usepackage{caption}
+
+% keyword directory
+\usepackage{imakeidx}
+
+% compact lists
+\usepackage{paralist}
+
+% better formating citations
+\usepackage{epigraph}
+
+\usepackage[toc, acronym]{glossaries} 
+
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\input{resources/styles/header_footer}
+
+% line spacing 1,5
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage[stretch=10]{microtype}
+
+\usepackage[english]{babel}
+
+\usepackage{lmodern}
+\usepackage[utf8]{luainputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{float} 
+
+\usepackage{tabularx}
+
+\usepackage{longtable}
+
+\usepackage{listings}
+
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{tikz}
+
+\usepackage{graphicx}
+
+\usepackage{wrapfig}
+
+\usepackage[hidelinks,english]{hyperref}
+
+\usepackage{csquotes} % used from biber
+\usepackage[style=alphabetic, backend=biber, bibencoding=ascii]{biblatex}
+\addbibresource{references/references.bib}
