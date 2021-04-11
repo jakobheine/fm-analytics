@@ -1,0 +1,55 @@
+% settings and adjustments
+\input{resources/settings/settings}
+\input{resources/styles/adjustments}
+
+% globals
+\author{Jakob Heine}
+
+% create glossaries
+\makeglossaries
+\loadglsentries{references/glossary_acronyms.tex}
+\setacronymstyle{long-short}
+
+\makeindex[columns=2, title=Stichwortverzeichnis, options= -s resources/styles/indexstyle.ist, intoc]
+\indexsetup{level=\chapter*,toclevel=chapter}
+
+%----------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+% abstract, ToC
+\pagenumbering{Roman}
+\include{chapter/misc/abstract} \clearpage
+\tableofcontents \newpage
+
+% thesis ------------------------------------------------
+\pagenumbering{arabic}
+\import{chapter/introduction/}{introduction.tex} \clearpage
+\import{chapter/literature_review/}{literature_review.tex} \clearpage
+\import{chapter/spitch/}{spitch.tex} \clearpage
+\import{chapter/data/}{data.tex} \clearpage
+\import{chapter/modelling/}{modelling.tex} \clearpage
+\import{chapter/machine_learning/}{machine_learning.tex} \clearpage
+\import{chapter/evaluation/}{evaluation.tex} \clearpage
+\import{chapter/conclusion/}{conclusion.tex} \clearpage
+% thesis end --------------------------------------------
+
+% Glossaries
+\pagenumbering{Alph}
+\listoffigures \clearpage
+\listoftables \clearpage
+\lstlistoflistings \clearpage
+\printindex \clearpage
+\printglossary[title={Glossary}] \clearpage
+\printglossary[style=dottedlocations,type=\acronymtype,title={List of abbreviations}] \clearpage
+
+% Bibliography
+\printbibliography[heading=bibintoc, title={Bibliography}]\clearpage
+
+% Appendix
+\input{chapter/misc/appendix}
+
+% DoA
+\input{chapter/misc/decleration_of_authenticity}
+
+\end{document}
