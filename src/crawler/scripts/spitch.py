@@ -3,22 +3,23 @@ from sqlalchemy import create_engine
 import pandas as pd
 import requests
 from datetime import datetime
+from os import getenv
 
 # constants
 API_URL = "https://api.spitch.live"
 JSON_INDENT = 2
 
 PROXIES = {
-  "http": "127.0.0.1:8118",
-  "https": "127.0.0.1:8118",
+  "http": "proxy:8118",
+  "https": "proxy:8118",
 }
 
 logging.root.setLevel(logging.INFO)
 
-db_name = 'fm_analytics'
-db_user = 'top_manager'
-db_pass = 'magical_password'
-db_host = 'localhost'
+db_name = getenv("POSTGRES_DB")
+db_user = getenv("POSTGRES_USER")
+db_pass = getenv("POSTGRES_PASSWORD")
+db_host = 'database'
 db_port = '5432'
 db_string = 'postgres://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
 db = create_engine(db_string)
@@ -100,6 +101,8 @@ def get_passed_matchdays():
 def get_latest_crawled_matchday():
     logging.info('Getting matchday id from latest crawled event...')
     latest_crawled_matchday = db.execute(f"""select max(m.number) from events e inner join matchdays m on m.id = e.matchday_id;""").fetchone()[0]
+    if latest_crawled_matchday is None:
+        latest_crawled_matchday = 0
     return latest_crawled_matchday
 
 def crawl_players():
@@ -141,14 +144,15 @@ def crawl_events():
         for index, player in df_players.iterrows():
             logging.info(f"""Crawling events for player: "{player['first_name']} {player['last_name']}" for matchday {matchday['number']}...""")
             request_url = "{}/matchdays/{}/players/{}/events".format(API_URL, matchday['id'], player['id'])
+            logging.info("URL: " + request_url)
             res = requests.get(request_url, proxies=PROXIES)
             res_json = res.json()
             events = res_json['events']
             for event in events:
                 event['matchday_id'] = matchday['id']
                 event['player_id'] = player['id']
-                df = pd.json_normalize(events)
-                df.to_sql('events', con=db, if_exists='append')
+            df = pd.json_normalize(events)
+            df.to_sql('events', con=db, if_exists='append')
 
 def crawl_spitch_data():
     crawl_matchdays()
