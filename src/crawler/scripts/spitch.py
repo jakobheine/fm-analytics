@@ -144,7 +144,6 @@ def crawl_events():
         for index, player in df_players.iterrows():
             logging.info(f"""Crawling events for player: "{player['first_name']} {player['last_name']}" for matchday {matchday['number']}...""")
             request_url = "{}/matchdays/{}/players/{}/events".format(API_URL, matchday['id'], player['id'])
-            logging.info("URL: " + request_url)
             res = requests.get(request_url, proxies=PROXIES)
             res_json = res.json()
             events = res_json['events']
