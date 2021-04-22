@@ -1,0 +1,23 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/chapter/data/section/descriptive_analytics.tex"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "british",
+                "domain": "academic",
+                "emotions": [
+                    "neutral",
+                    "analytical"
+                ],
+                "goals": [
+                    "inform",
+                    "describe",
+                    "convince"
+                ]
+            }
+        }
+    ]
+}
