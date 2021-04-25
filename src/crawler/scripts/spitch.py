@@ -21,7 +21,7 @@ db_user = getenv("POSTGRES_USER")
 db_pass = getenv("POSTGRES_PASSWORD")
 db_host = 'database'
 db_port = '5432'
-db_string = 'postgres://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
+db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
 db = create_engine(db_string)
 
 def get_market_value_id(player):
