@@ -42,6 +42,28 @@ services:
       - ./database/sql/01_init_default_tables.sql:/docker-entrypoint-initdb.d/01_init_default_tables.sql
     ports:
       - 127.0.0.1:5432:5432
+  
+  pgbackups:
+    container_name: backup
+    image: prodrigestivill/postgres-backup-local
+    restart: always
+    volumes:
+      - ./backup:/backups
+    links:
+      - database:database
+    depends_on:
+      - database
+    environment:
+      - POSTGRES_HOST=database
+      - POSTGRES_DB=${POSTGRES_DB} 
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_EXTRA_OPTS=-Z9 --schema=public --blobs
+      - SCHEDULE=@every 24h00m00s
+      - BACKUP_KEEP_DAYS=7
+      - BACKUP_KEEP_WEEKS=4
+      - BACKUP_KEEP_MONTHS=6
+      - HEALTHCHECK_PORT=81
       
   proxy:
     image: laureichardt/public:proxy_0.0.1
