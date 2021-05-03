@@ -131,10 +131,14 @@ def crawl_events():
     latest_crawled_matchday = get_latest_crawled_matchday()
 
     matchdays_to_crawl = sorted(matchday for matchday in passed_matchdays if matchday > latest_crawled_matchday)
-    
-    logging.info("Getting id's for matchdays to crawl...")
-    matchdays_to_crawl = db.execute(f"""select id, number from matchdays where number in {str(tuple(matchdays_to_crawl))}""")
 
+    logging.info("Getting id's for matchdays to crawl...")
+    if matchdays_to_crawl:
+        if len(matchdays_to_crawl) == 1:
+            matchdays_to_crawl = db.execute(f"""select id, number from matchdays where number = {matchdays_to_crawl[0]}""")
+        else:
+            matchdays_to_crawl = db.execute(f"""select id, number from matchdays where number in {str(tuple(matchdays_to_crawl))}""")
+        
     logging.info("Getting player id's...")
     df_players = pd.read_sql_table('players', db)
 
