@@ -73,7 +73,7 @@ def print_lineup(dict_lineup, df):
 
     formation = 'Formation:\t\t{}-{}-{}\n\n'.format(dict_lineup['defenders'], dict_lineup['midfielders'], dict_lineup['attackers'])
     captain = 'Captain:\t\t{}\n\n'.format(df.loc[df['score'].idxmax()]['first_name'] + ' ' + df.loc[df['score'].idxmax()]['last_name'])
-    lineup = 'Lineup:\n\nAttackers:\t\t{}\n\nMidfielders:\t\t{}\n\nDefenders:\t\t{}\n\nGoalkeeper:\t\t{}\n\n'.format(dict_lineup['attackers_players'], dict_lineup['midfielders_players'], dict_lineup['defenders_players'], dict_lineup['goalkeeper'])
+    lineup = 'Lineup:\n\nAttackers:\t\t{}\n\nMidfielders:\t{}\n\nDefenders:\t\t{}\n\nGoalkeeper:\t\t{}\n\n'.format(dict_lineup['attackers_players'], dict_lineup['midfielders_players'], dict_lineup['defenders_players'], dict_lineup['goalkeeper'])
     score = 'Calculated score:\t{}\n\n'.format(dict_lineup['score_sum'])
     babel.numbers.format_currency(dict_lineup['market_value_sum']/100, "EUR", locale='de')
     costs = 'Budget needed:\t\t{}'.format(babel.numbers.format_currency(dict_lineup['market_value_sum']/100, "EUR", locale='de'))
