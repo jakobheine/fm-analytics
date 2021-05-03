@@ -33,7 +33,7 @@ def get_predictions(df):
 
     passed_matchdays = get_passed_matchdays()
     
-    df_predictions = pd.DataFrame(columns=['id','type','prediction'])
+    df_predictions = pd.DataFrame(columns=['id','name','type','prediction'])
 
     logging.info("Calculating predictions...")
     
@@ -41,6 +41,8 @@ def get_predictions(df):
         for player_type_tuple in player_tuple[1].groupby('type'):
             
             df_player_type = player_type_tuple[1]
+
+            name = df_player_type['name'].max()
     
             for matchday in passed_matchdays:
                if df_player_type.loc[df_player_type['matchday'] == matchday].empty == True:
@@ -54,19 +56,21 @@ def get_predictions(df):
             model = LinearRegression().fit(x, y)
             x_new = np.array([32]).reshape((-1, 1))
             y_pred = model.predict(x_new)
+            pred_int = y_pred[0].round(0).astype(int)
 
-            df_predictions = df_predictions.append({'id': player_tuple[0], 'type': player_type_tuple[0], 'prediction': y_pred[0].round(0).astype(int)}, ignore_index=True)
+            df_predictions = df_predictions.append({'id': player_tuple[0], 'type': player_type_tuple[0], 'prediction': pred_int}, ignore_index=True)
+            logging.info(f"""Predicted {pred_int} occurences for event: '{player_type_tuple[0]}' for player: '{name}' """)
     
     return df_predictions
 
 def get_data(db):
     logging.info("Getting data from datrabase...")
-    db_response = db.execute(f"""select p.id, m.number as matchday, type, count(*) from events
+    db_response = db.execute(f"""select p.id, (coalesce(p.first_name, '') || ' ' ||coalesce(p.last_name, '')) as name, m.number as matchday, type, count(*) from events
     inner join matchdays m on events.matchday_id = m.id
     inner join players p on events.player_id = p.id
     where corrected is false
-    group by p.id, matchday, type
-    order by p.id, matchday, type desc""")
+    group by p.id, name, matchday, type
+    order by p.id, name, matchday, type desc""")
 
     df_events = pd.DataFrame(db_response.fetchall())
     df_events.columns = db_response.keys()
