@@ -7,25 +7,26 @@ import logging
 db_name = getenv("POSTGRES_DB")
 db_user = getenv("POSTGRES_USER")
 db_pass = getenv("POSTGRES_PASSWORD")
-db_host = 'localhost'
+db_host = 'database'
 db_port = '5432'
 db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
 db = create_engine(db_string)
 
 logging.root.setLevel(logging.INFO)
 
-def get_player_data(matchday_id):
+def get_player_data(data):
+    df = pd.DataFrame(data)
+
     GET_PLAYER_DATA = f"""
-    select first_name, last_name, club_id, position, mv.market_value, sum(e.score) as score from players
-        inner join market_values mv on players.id = mv.player_id
-        inner join events e on mv.player_id = e.player_id
-    where injured = false and mv.valid_to is null and matchday_id = '{matchday_id}'
-    group by first_name, last_name, club_id, position, mv.market_value;
+    select p.id, first_name, last_name, club_id, position, mv.market_value from players p
+        inner join market_values mv on p.id = mv.player_id
+    where injured = false and mv.valid_to is null;
     """
     db_response = db.execute(GET_PLAYER_DATA)
-    df = pd.DataFrame(db_response.fetchall())
-    df.columns = db_response.keys()
-    
+    df_players = pd.DataFrame(db_response.fetchall())
+    df_players.columns = db_response.keys()
+
+    df = pd.merge(df, df_players, how="inner", on="id").rename(columns={"sum_score": "score"})
     return df
 
 def update_scores(df):
@@ -81,8 +82,8 @@ def print_lineup(dict_lineup, df):
 
     logging.info(output)
 
-def get_lineup():
-    df = get_player_data('ccd60840-190a-56b7-9acf-41c15ff8394a')
+def get_lineup(data):
+    df = get_player_data(data)
     df = update_scores(df)
     df_lineups = calculate_lineup_scores(df)
     dict_best_lineup = get_best_lineup(df_lineups)

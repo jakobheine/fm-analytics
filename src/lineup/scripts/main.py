@@ -1,13 +1,14 @@
 import logging
-import schedule
-import time
-from lineup import get_lineup
+from app.lineup import get_lineup
+from fastapi import Request, FastAPI
 
-logging.info("LineUp-Service up and running, waiting for scheduled event.")
+logging.info("LineUp-Service up and running, waiting for requests...")
 
-# print the lineup every Friday 1:00PM UTC, which is 3:00PM MESZ, 30 minutes before kick-off of matchday
-schedule.every().friday.at("13:00").do(get_lineup)
+app = FastAPI()
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+@app.post("/get_data")
+async def get_data(request: Request):
+    logging.info("Getting request...")
+    data = await request.json()
+    get_lineup(data)
+    return data
