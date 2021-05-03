@@ -3,6 +3,7 @@ import pandas as pd
 from os import getenv
 import babel.numbers
 import logging
+from app.bot import tell_lineup, get_job_queue
 
 db_name = getenv("POSTGRES_DB")
 db_user = getenv("POSTGRES_USER")
@@ -13,6 +14,8 @@ db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_p
 db = create_engine(db_string)
 
 logging.root.setLevel(logging.INFO)
+
+output = "No best lineup predicted right now!";
 
 def get_player_data(data):
     df = pd.DataFrame(data)
@@ -69,7 +72,7 @@ def get_best_lineup(df_lineups):
 
     return dict_best_lineup
 
-def print_lineup(dict_lineup, df):
+def output_lineup(dict_lineup, df):
 
     formation = 'Formation:\t\t{}-{}-{}\n\n'.format(dict_lineup['defenders'], dict_lineup['midfielders'], dict_lineup['attackers'])
     captain = 'Captain:\t\t{}\n\n'.format(df.loc[df['score'].idxmax()]['first_name'] + ' ' + df.loc[df['score'].idxmax()]['last_name'])
@@ -78,9 +81,7 @@ def print_lineup(dict_lineup, df):
     babel.numbers.format_currency(dict_lineup['market_value_sum']/100, "EUR", locale='de')
     costs = 'Budget needed:\t\t{}'.format(babel.numbers.format_currency(dict_lineup['market_value_sum']/100, "EUR", locale='de'))
 
-    output = '\n\nCalculated best lineup for upcoming matchday \n\n' + formation + captain + lineup + score + costs
-
-    logging.info(output)
+    return '\n\nCalculated best lineup for upcoming matchday \n\n' + formation + captain + lineup + score + costs
 
 def get_lineup(data):
     df = get_player_data(data)
@@ -88,4 +89,11 @@ def get_lineup(data):
     df_lineups = calculate_lineup_scores(df)
     dict_best_lineup = get_best_lineup(df_lineups)
 
-    print_lineup(dict_best_lineup, df)
+    
+    global output
+    output = output_lineup(dict_best_lineup, df)
+    logging.info(output)
+    get_job_queue().run_once(tell_lineup, 1)
+
+def get_output():
+    return output

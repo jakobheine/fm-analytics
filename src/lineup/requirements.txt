@@ -4,8 +4,16 @@
 #
 #    pip-compile requirements.in
 #
+apscheduler==3.6.3
+    # via python-telegram-bot
 babel==2.9.0
     # via -r requirements.in
+certifi==2020.12.5
+    # via
+    #   python-telegram-bot
+    #   requests
+chardet==4.0.0
+    # via requests
 click==7.1.2
     # via uvicorn
 fastapi==0.63.0
@@ -16,6 +24,8 @@ h11==0.12.0
     # via uvicorn
 httptools==0.1.2
     # via uvicorn
+idna==2.10
+    # via requests
 numpy==1.20.2
     # via pandas
 pandas==1.2.4
@@ -28,20 +38,34 @@ python-dateutil==2.8.1
     # via pandas
 python-dotenv==0.17.1
     # via uvicorn
+python-telegram-bot==13.5
+    # via -r requirements.in
 pytz==2021.1
     # via
+    #   apscheduler
     #   babel
     #   pandas
+    #   python-telegram-bot
 pyyaml==5.4.1
     # via uvicorn
+requests==2.25.1
+    # via -r requirements.in
 six==1.15.0
-    # via python-dateutil
+    # via
+    #   apscheduler
+    #   python-dateutil
 sqlalchemy==1.4.11
     # via -r requirements.in
 starlette==0.13.6
     # via fastapi
+tornado==6.1
+    # via python-telegram-bot
 typing-extensions==3.10.0.0
     # via pydantic
+tzlocal==2.1
+    # via apscheduler
+urllib3==1.26.4
+    # via requests
 uvicorn[standard]==0.13.4
     # via -r requirements.in
 uvloop==0.15.2
@@ -50,3 +74,6 @@ watchgod==0.7
     # via uvicorn
 websockets==8.1
     # via uvicorn
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
