@@ -90,6 +90,17 @@ services:
       - TORS=8
     ports:
       - 127.0.0.1:8118:8118
+  
+  datascience-notebook:
+    image: jupyter/datascience-notebook
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN}
+    volumes:
+      - ./notebooks/:/home/jovyan/fm_analytics/
+      - ./notebooks/requirements.txt:/home/jovyan/fm_analytics/requirements.txt
+    ports:
+      - 8888:8888
+    container_name: datascience-notebook-container
 
 volumes:
   database-data:
