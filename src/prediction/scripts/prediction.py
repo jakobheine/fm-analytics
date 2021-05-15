@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
 
 import logging
 from os import getenv
@@ -32,7 +30,10 @@ def get_predictions(df):
     df_players = df.groupby('id')
 
     passed_matchdays = get_passed_matchdays()
-    
+
+    # get the maximum from passed_matchdays, add 1 and cast it into an array
+    upcoming_matchday = [max(passed_matchdays) + 1]
+
     df_predictions = pd.DataFrame(columns=['id','name','type','prediction'])
 
     logging.info("Calculating predictions...")
@@ -43,20 +44,13 @@ def get_predictions(df):
             df_player_type = player_type_tuple[1]
 
             name = df_player_type['name'].max()
-    
+
             for matchday in passed_matchdays:
                if df_player_type.loc[df_player_type['matchday'] == matchday].empty == True:
                 df_player_type = df_player_type.append({'id': player_tuple[0], 'matchday': matchday, 'type': player_type_tuple[0], 'count': 0 }, ignore_index=True)
     
-            df_player_type = df_player_type.sort_values(by=['matchday'])
-    
-            x = np.array(df_player_type['matchday']).reshape((-1, 1))
-            y = np.array(df_player_type['count'])
-    
-            model = LinearRegression().fit(x, y)
-            x_new = np.array([32]).reshape((-1, 1))
-            y_pred = model.predict(x_new)
-            pred_int = y_pred[0].round(0).astype(int)
+            # mean of past 5 values 
+            pred_int = int(df_player_type.nlargest(5, 'matchday')['count'].mean())
 
             df_predictions = df_predictions.append({'id': player_tuple[0], 'type': player_type_tuple[0], 'prediction': pred_int}, ignore_index=True)
             logging.info(f"""Predicted {pred_int} occurences for event: '{player_type_tuple[0]}' for player: '{name}' """)
@@ -64,7 +58,7 @@ def get_predictions(df):
     return df_predictions
 
 def get_data(db):
-    logging.info("Getting data from datrabase...")
+    logging.info("Getting data from database...")
     db_response = db.execute(f"""select p.id, (coalesce(p.first_name, '') || ' ' ||coalesce(p.last_name, '')) as name, m.number as matchday, type, count(*) from events
     inner join matchdays m on events.matchday_id = m.id
     inner join players p on events.player_id = p.id
