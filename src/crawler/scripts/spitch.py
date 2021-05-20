@@ -116,7 +116,7 @@ def crawl_players():
     for index, player in df.iterrows():
         df.at[index, 'market_value'] = get_market_value_id(player)
 
-    logging.info('Replace players database...')
+    logging.info('Replace players table...')
     df.to_sql('players', con=db, if_exists='replace')
 
 def crawl_matchdays():
@@ -157,7 +157,18 @@ def crawl_events():
             df = pd.json_normalize(events)
             df.to_sql('events', con=db, if_exists='append')
 
+def crawl_teams():
+    logging.info('Crawling team data...')
+    res = requests.get(API_URL + '/contestants', proxies=PROXIES)
+    contestants = res.json()
+    teams = contestants['clubs']
+    df = pd.json_normalize(teams)
+    
+    logging.info('Replace team table...')
+    df.to_sql('teams', con=db, if_exists='replace')
+
 def crawl_spitch_data():
     crawl_matchdays()
+    crawl_teams()
     crawl_players()
     crawl_events()
