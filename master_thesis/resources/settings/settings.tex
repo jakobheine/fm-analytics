@@ -55,5 +55,6 @@
 \usepackage[hidelinks,english]{hyperref}
 
 \usepackage{csquotes} % used from biber
-\usepackage[style=alphabetic, backend=biber, bibencoding=ascii]{biblatex}
+\usepackage[backend=biber, citestyle=authoryear-comp]{biblatex}
 \addbibresource{references/references.bib}
+\renewcommand*{\nameyeardelim}{\addcomma\space} % comma between author and year
