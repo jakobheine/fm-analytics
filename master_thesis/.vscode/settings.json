@@ -18,6 +18,26 @@
                     "convince"
                 ]
             }
+        },
+        {
+            "files": [
+                "**/chapter/literature_review/literature_review.tex"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "british",
+                "domain": "academic",
+                "emotions": [
+                    "neutral",
+                    "analytical"
+                ],
+                "goals": [
+                    "inform",
+                    "describe",
+                    "convince",
+                    "tellStory"
+                ]
+            }
         }
     ]
 }
