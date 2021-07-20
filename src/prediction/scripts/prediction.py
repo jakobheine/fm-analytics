@@ -80,7 +80,7 @@ def get_predictions(df):
             df_player_type = add_missing_matchdays(df_player_type, current_timestamp, player_id, event_type)
             df_player_odds = df_odds.loc[df_odds['club_id'] == club_id][['odd_win', 'odd_lose', 'odd_draw']]
 
-            # SME-5 
+            # SMA-5 
             prediction = df_player_type.nlargest(5, 'matchday')['count'].mean()
             prediction = prediction * odds_baseline / df_player_odds['odd_lose'].max() if is_positive_event(event_type) else df_player_odds['odd_win'].max()
 
