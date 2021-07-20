@@ -8,7 +8,7 @@ logging.info("Prediction service up and running, waiting for scheduled event..."
 # execute the prediction every Monday 9:59PM UTC, which is 11:59PM MESZ
 schedule.every().monday.at("21:59").do(predict)
 
-predict()
+# predict()
 
 while True:
     schedule.run_pending()
