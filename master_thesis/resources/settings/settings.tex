@@ -42,6 +42,17 @@
 
 \usepackage{longtable}
 
+\usepackage{booktabs}
+
+\usepackage{makecell}
+
+\makeatletter
+\def\@rothead[#1]#2{\thead{\\[-.65\normalbaselineskip]
+  \turn{\cellrotangle}\thead[#1]{#2}\endturn}}
+\makeatother
+
+\usepackage{rotating}
+
 \usepackage{listings}
 
 \usepackage[table,xcdraw]{xcolor}
