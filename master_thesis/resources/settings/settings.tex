@@ -10,6 +10,7 @@
 \usepackage{scrhack}
 
 \usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false} % caption left-aligned
 
 % keyword directory
 \usepackage{imakeidx}
@@ -41,6 +42,7 @@
 \usepackage{tabularx}
 
 \usepackage{longtable}
+\usepackage{multirow} % header in table matrix
 
 \usepackage{booktabs}
 
@@ -60,12 +62,15 @@
 \usepackage{tikz}
 
 \usepackage{graphicx}
+\graphicspath{ {./} }
 
 \usepackage{wrapfig}
 
 \usepackage[hidelinks,english]{hyperref}
 
+\usepackage{lscape} % produce landscape pages in mainly portrait document
+
 \usepackage{csquotes} % used from biber
-\usepackage[backend=biber, citestyle=authoryear-comp]{biblatex}
+\usepackage[backend=biber, citestyle=authoryear,natbib]{biblatex}
 \addbibresource{references/references.bib}
-\renewcommand*{\nameyeardelim}{\addcomma\space} % comma between author and year
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % comma between author and year
