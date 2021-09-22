@@ -12,6 +12,8 @@ astunparse==1.6.3
     # via tensorflow
 attrs==21.2.0
     # via jsonschema
+auto-sklearn==0.14.0
+    # via -r requirements.in
 cachetools==4.2.2
     # via google-auth
 certifi==2020.12.5
@@ -20,12 +22,30 @@ chardet==4.0.0
     # via requests
 clang==5.0
     # via tensorflow
+click==8.0.1
+    # via distributed
 cloudpickle==1.6.0
-    # via dask
+    # via
+    #   dask
+    #   distributed
+configspace==0.4.20
+    # via
+    #   auto-sklearn
+    #   smac
 cycler==0.10.0
     # via matplotlib
-dask==2021.8.0
-    # via -r requirements.in
+cython==0.29.24
+    # via configspace
+dask==2021.6.2
+    # via
+    #   -r requirements.in
+    #   auto-sklearn
+    #   distributed
+    #   smac
+distributed==2021.6.2
+    # via
+    #   auto-sklearn
+    #   smac
 flatbuffers==1.12
     # via tensorflow
 fsspec==2021.7.0
@@ -48,12 +68,17 @@ grpcio==1.39.0
     #   tensorflow
 h5py==3.1.0
     # via tensorflow
+heapdict==1.0.1
+    # via zict
 idna==2.10
     # via requests
 ipython-genutils==0.2.0
     # via nbformat
 joblib==1.0.1
-    # via scikit-learn
+    # via
+    #   auto-sklearn
+    #   scikit-learn
+    #   smac
 jsonschema==3.2.0
     # via nbformat
 jupyter-core==4.7.1
@@ -64,17 +89,25 @@ keras==2.6.0
     # via tensorflow
 kiwisolver==1.3.2
     # via matplotlib
+liac-arff==2.5.0
+    # via auto-sklearn
 locket==0.2.1
     # via partd
 markdown==3.3.4
     # via tensorboard
 matplotlib==3.4.3
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   seaborn
+msgpack==1.0.2
+    # via distributed
 nbformat==5.1.3
     # via -r requirements.in
 numpy==1.19.5
     # via
     #   -r requirements.in
+    #   auto-sklearn
+    #   configspace
     #   h5py
     #   keras-preprocessing
     #   matplotlib
@@ -82,16 +115,19 @@ numpy==1.19.5
     #   pandas
     #   scikit-learn
     #   scipy
+    #   seaborn
+    #   smac
     #   tensorboard
     #   tensorflow
 oauthlib==3.1.1
     # via requests-oauthlib
 opt-einsum==3.3.0
     # via tensorflow
-packaging==21.0
-    # via dask
 pandas==1.2.4
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   auto-sklearn
+    #   seaborn
 partd==1.2.0
     # via dask
 pillow==8.3.1
@@ -102,6 +138,11 @@ protobuf==3.17.3
     # via
     #   tensorboard
     #   tensorflow
+psutil==5.8.0
+    # via
+    #   distributed
+    #   pynisher
+    #   smac
 psycopg2-binary==2.8.6
     # via -r requirements.in
 pyasn1-modules==0.2.8
@@ -110,10 +151,18 @@ pyasn1==0.4.8
     # via
     #   pyasn1-modules
     #   rsa
+pynisher==0.6.4
+    # via
+    #   auto-sklearn
+    #   smac
 pyparsing==2.4.7
     # via
+    #   configspace
     #   matplotlib
-    #   packaging
+pyrfr==0.8.2
+    # via
+    #   auto-sklearn
+    #   smac
 pyrsistent==0.18.0
     # via jsonschema
 python-dateutil==2.8.1
@@ -123,7 +172,10 @@ python-dateutil==2.8.1
 pytz==2021.1
     # via pandas
 pyyaml==5.4.1
-    # via dask
+    # via
+    #   auto-sklearn
+    #   dask
+    #   distributed
 requests-oauthlib==1.3.0
     # via google-auth-oauthlib
 requests==2.25.1
@@ -134,9 +186,18 @@ requests==2.25.1
 rsa==4.7.2
     # via google-auth
 scikit-learn==0.24.2
-    # via sklearn
+    # via
+    #   auto-sklearn
+    #   sklearn
+    #   smac
 scipy==1.7.1
-    # via scikit-learn
+    # via
+    #   auto-sklearn
+    #   scikit-learn
+    #   seaborn
+    #   smac
+seaborn==0.11.2
+    # via -r requirements.in
 six==1.15.0
     # via
     #   absl-py
@@ -153,10 +214,16 @@ six==1.15.0
     #   tensorflow
 sklearn==0.0
     # via -r requirements.in
+smac==1.0.1
+    # via auto-sklearn
 smart-match==0.1.1
     # via -r requirements.in
+sortedcontainers==2.4.0
+    # via distributed
 sqlalchemy==1.4.15
     # via -r requirements.in
+tblib==1.7.0
+    # via distributed
 tenacity==8.0.1
     # via plotly
 tensorboard-data-server==0.6.1
@@ -172,11 +239,16 @@ tensorflow==2.6.0
 termcolor==1.1.0
     # via tensorflow
 threadpoolctl==2.2.0
-    # via scikit-learn
+    # via
+    #   auto-sklearn
+    #   scikit-learn
 toolz==0.11.1
     # via
     #   dask
+    #   distributed
     #   partd
+tornado==6.1
+    # via distributed
 tqdm==4.62.2
     # via -r requirements.in
 traitlets==5.1.0
@@ -184,7 +256,9 @@ traitlets==5.1.0
     #   jupyter-core
     #   nbformat
 typing-extensions==3.7.4.3
-    # via tensorflow
+    # via
+    #   auto-sklearn
+    #   tensorflow
 urllib3==1.26.4
     # via requests
 werkzeug==2.0.1
@@ -196,6 +270,8 @@ wheel==0.37.0
     #   tensorflow
 wrapt==1.12.1
     # via tensorflow
+zict==2.0.0
+    # via distributed
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
