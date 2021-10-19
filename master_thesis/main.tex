@@ -19,19 +19,16 @@
 
 % abstract, ToC
 \pagenumbering{Roman}
-\include{chapter/misc/abstract} \clearpage
+\include{chapter/9_misc/abstract} \clearpage
 \tableofcontents \newpage
 
 % thesis ------------------------------------------------
 \pagenumbering{arabic}
-\import{chapter/introduction/}{introduction.tex} \clearpage
-\import{chapter/literature_review/}{literature_review.tex} \clearpage
-\import{chapter/spitch/}{spitch.tex} \clearpage
-\import{chapter/data/}{data.tex} \clearpage
-\import{chapter/modelling/}{modelling.tex} \clearpage
-\import{chapter/machine_learning/}{machine_learning.tex} \clearpage
-\import{chapter/evaluation/}{evaluation.tex} \clearpage
-\import{chapter/conclusion/}{conclusion.tex} \clearpage
+\import{chapter/1_introduction/}{introduction.tex} \clearpage
+\import{chapter/2_foundations/}{foundation.tex} \clearpage
+\import{chapter/3_literature_review/}{literature_review.tex} \clearpage
+\import{chapter/4_implementation/}{implementation.tex} \clearpage
+\import{chapter/5_conclusion/}{conclusion.tex} \clearpage
 % thesis end --------------------------------------------
 
 % Glossaries
@@ -47,9 +44,9 @@
 \printbibliography[heading=bibintoc, title={Bibliography}]\clearpage
 
 % Appendix
-\input{chapter/misc/appendix}
+\input{chapter/9_misc/appendix}
 
 % DoA
-\input{chapter/misc/decleration_of_authenticity}
+\input{chapter/9_misc/decleration_of_authenticity}
 
 \end{document}
