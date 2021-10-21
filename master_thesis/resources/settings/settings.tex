@@ -41,10 +41,20 @@
 
 \usepackage{tabularx}
 
+\usepackage{chngcntr} % change counter to not start new at each chapter
+\counterwithout{table}{chapter} % for tables
+\counterwithout{equation}{chapter} % for equations
+
+\usepackage{numprint} % auto-format numbers over 999 ...
+\npthousandsep{,} % ... to use ',' as seperator
+
+\usepackage{eurosym} % add € for equations
+
 \usepackage{longtable}
 \usepackage{multirow} % header in table matrix
 
 \usepackage{booktabs}
+\renewcommand{\arraystretch}{1.5} % increase height of table rows booktabs
 
 \usepackage{makecell}
 
