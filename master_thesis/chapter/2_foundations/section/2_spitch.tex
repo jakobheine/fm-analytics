@@ -59,10 +59,10 @@ Each player \emph{P\textsubscript{i}} has a transfer market value \emph{V\textsu
 
 Thereby, the factor $0.8\cdot10^{-5}$ is used by SPITCH as a balancing method. \parencite[cf.][]{spitch_rules_nodate} For example, if the budget exceeds €10m, i.e., a budget of -€10m, the manager starts with $-\textup{\euro}10\textup{m}\cdot0.8\cdot10^{-5} = -80$ manager score. Consequently, manager points do not exponentially increase or decrease the further one moves away from the budget threshold. For this reason, the transfer market value \emph{V} of a player \emph{P} can be converted and taken into account to his points \emph{p}. For instance, a player \emph{P\textsubscript{1}} with a transfer market value \emph{V\textsubscript{1}} of €10m must therefore first score 80 points \emph{p} to achieve a total positive score for the team. Since a linear relation can be established between the target value, the final line-up score \emph{S\textsubscript{L}}, and the weight of the transfer market values V, there is \textbf{no typical knapsack problem at hand}.
 
-Since the transfer market value of a player \emph{V\textsubscript{i}} can be counted towards a player's individual score S\textsubscript{P\textsubscript{i}}, equation (\ref{eq:player_score}) can be supplemented by equation (\ref{eq:value_to_manager_score}):
+Since the transfer market value of a player \emph{V\textsubscript{i}} can be counted towards a player's individual score S\textsubscript{P\textsubscript{i}}, equation (\ref{eq:player_score}) can be supplemented by equation (\ref{eq:value_to_manager_score}) to create the adjusted player score:
 
 \begin{equation}
-    S\textsubscript{P\textsubscript{i}} = -V\textsubscript{i}\cdot0.8\cdot10^{-5} + \sum_{k=1}^{33} O\textsubscript{k} * p\textsubscript{k}
+    S\textsubscript{P\textsubscript{i}M} = -V\textsubscript{i}\cdot0.8\cdot10^{-5} + \sum_{k=1}^{33} O\textsubscript{k} * p\textsubscript{k}
     \label{eq:player_score_with_value}
 \end{equation}
 
