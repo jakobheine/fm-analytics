@@ -1,0 +1,13 @@
+Mean_CV_MAE,design,model
+99.32157529523687,treatment,LinearRegression()
+117.81861053347745,treatment,LogisticRegression()
+135.9116541328001,treatment,DecisionTreeRegressor()
+102.94909034402754,treatment,RandomForestRegressor()
+105.40694996625643,treatment,KNeighborsRegressor()
+120.05573078125944,treatment,SVC()
+99.7302568454161,baseline,LinearRegression()
+118.51919542184937,baseline,LogisticRegression()
+132.90585821937208,baseline,DecisionTreeRegressor()
+107.55179966438341,baseline,RandomForestRegressor()
+106.38036835347889,baseline,KNeighborsRegressor()
+120.52458959052328,baseline,SVC()
