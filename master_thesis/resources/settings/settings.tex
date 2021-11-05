@@ -44,6 +44,7 @@
 \usepackage{chngcntr} % change counter to not start new at each chapter
 \counterwithout{table}{chapter} % for tables
 \counterwithout{equation}{chapter} % for equations
+\counterwithout{figure}{chapter} % for figures
 
 \usepackage{numprint} % auto-format numbers over 999 ...
 \npthousandsep{,} % ... to use ',' as seperator
@@ -81,6 +82,6 @@
 \usepackage{lscape} % produce landscape pages in mainly portrait document
 
 \usepackage{csquotes} % used from biber
-\usepackage[backend=biber, citestyle=authoryear,natbib]{biblatex}
+\usepackage[backend=biber, citestyle=authoryear, style=apa,natbib]{biblatex}
 \addbibresource{references/references.bib}
 % \renewcommand*{\nameyeardelim}{\addcomma\space} % comma between author and year
