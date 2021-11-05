@@ -28,7 +28,7 @@ Before the machine learning models are created, two \emph{dummy} models are defi
 
 \begin{table}[H]
     \renewcommand{\arraystretch}{1.0}
-    \caption{Results of Dummy Models}
+    \caption{Dummy Models Results}
     \label{tab:results_of_dummy_models}
     \begin{tabular}{@{}cccccc@{}}
     \toprule
@@ -85,7 +85,7 @@ The hyperparameter tuning of the Random Forest Regression Model happens with the
  \begin{table}[H]
     \renewcommand{\arraystretch}{1.0}
     \setlength{\tabcolsep}{6pt}
-    \caption{Results of Models on the Test Dataset}
+    \caption{Models' Results on the Test Dataset}
     \label{tab:results_test_data}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}llccrc@{}}
@@ -111,11 +111,11 @@ The hyperparameter tuning of the Random Forest Regression Model happens with the
     }
 \end{table}
 
-The table shows that the \textbf{hyperparameter tuned random forest regression model} in the treatment design, i.e. with the betting odds as features, made the \textbf{most accurate predictions} on the test dataset, with an average of just under \textbf{52\%} of the points from the best possible lineup. The model is 16\% or 11\% respectively better than the dummy models. On average, the model misjudged each player by 104.5 points in the test and is thus 6 points worse than on the training dataset. If the winning zone would start at 60\% of the best possible score, the model would have \textbf{won a prize 2 times} and brought in a total prize money of \textbf{33.86€}. This profit is possible because the standard deviation of the best model is 7.6\%, which indicates that it is quite realistic for the model to reach more than 60\% in nine tries.
+The table shows that the \textbf{hyperparameter tuned random forest regression model} in the treatment design, i.e., with the betting odds as features, made the \textbf{most accurate predictions} on the test dataset, with an average of just under \textbf{52\%} of the points from the best possible line-up. The model is 16\% or 11\% respectively, better than the dummy models. On average, the model misjudged each player by 104.5 points in the test and is thus 6 points worse than on the training dataset. If the winning zone would start at 60\% of the best possible score, the model would have \textbf{won a prize two times} and brought in total prize money of \textbf{33.86€}. This profit is possible because the standard deviation of the best model is 7.6\%, which indicates that it is quite realistic for the model to reach more than 60\% in nine tries.
 
 Interestingly, although the multiple linear regression model in the treatment design made less accurate predictions on average than the random forest regression model in the baseline design, it still won a prize. This means that despite poorer individual predictions, it lined up a better team, probably because of luck.
 
-Furthermore, it is noticeable that on the test dataset only four out of seven models performed better in the treatment design than in the baseline design. This could indicate that the models overfitted on the betting odds in the training dataset. However, the influence of the betting odds will be examined in detail in the next section.
+Furthermore, it is noticeable that on the test dataset, only four out of seven models performed better in the treatment design than in the baseline design. This could indicate that the models were overfitted on the betting odds in the training dataset. However, the influence of the betting odds will be examined in detail in the next section.
 
 
 
