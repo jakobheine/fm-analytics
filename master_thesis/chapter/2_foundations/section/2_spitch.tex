@@ -1,0 +1,76 @@
+\clearpage \section{SPITCH}
+
+\label{chap:SPITCH}
+
+This section intends to provide the necessary rules from SPITCH needed to understand the optimization problem at hand. Additionally, this section aims to outline the first approaches to a possible solution.
+
+As already mentioned in the previous chapter, SPITCH is a provider for fantasy soccer leagues. \parencite[cf.][]{spitch_spitch_2021} At the beginning of writing, SPITCH only provided competitions for the German \emph{Bundesliga}. Until now, numerous national football associations from different countries joined. Furthermore, football managers can these days compete in various other game modes. This thesis solely deals with the traditional game mode for the German \emph{Bundesliga}. \\
+To counteract confusion that may arise, the following terms and their meaning in the context of this work, such as player or manager, are explained in more detail. Furthermore, each word is assigned a variable that will help understand the calculation of scores more quickly.
+
+\begin{table}[H]
+    \caption{SPITCH Glossary}
+    \label{tab:glossary-spitch}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}ccl@{}}
+    \toprule
+    \textbf{Term} & \textbf{Variable} & \textbf{Meaning}                                           \\ \midrule
+    Manager       & M                 & Participants of SPITCH                                     \\
+    Player        & P                 & Real soccer player, i.e. Manuel Neuer                      \\
+    Value         & V                 & Transfer market value of a Player P                        \\
+    Event         & E                 & In-game events such as Goal, Pass, Unsuccessfull Pass etc. \\
+    Points        & p                 & Points according to SPITCH points catalogue                \\
+    Score         & S                 & Sum of points p                                            \\
+    Round         & R                 & Game-Round, e.g. matchday                                  \\
+    Line-up       & L                 & Line-up consisting of 11 players P                        \\ \bottomrule
+    \end{tabular}%
+    }
+\end{table}
+
+
+Like most fantasy leagues, the aim in the traditional game mode is to line up a team that performs best. Unlike most fantasy leagues, the managers \emph{M} in a SPITCH competition only assemble a line-up \emph{L} for the upcoming match day. So when planning the line-up, it is not necessary to think long-term for the entire season. A new line-up consisting of different players can be created for each round R. Each line-up consists of 11 out of 711 possible players \emph{P}. Each player \emph{P\textsubscript{i}}, $\{\,i \mid i \in \{1, 2, ..., 711\}\,\}$ has a score \emph{S\textsubscript{PR}} for each of the 34 rounds \emph{R\textsubscript{j}}, $\{\, j \mid j \in \{1, 2, ..., 34\}\,\}$. For simplicity, as the rounds are separated and thus do not influence each other, the following declarations are all round-specific. The final line-up score \emph{S\textsubscript{L}} is the sum of 11 individual player scores \emph{S\textsubscript{P\textsubscript{i}}} :
+
+\begin{equation}
+    S\textsubscript{L} = \sum_{i=1}^{11} S\textsubscript{P\textsubscript{i}}
+    \label{eq:final_score_simplified}
+\end{equation}
+
+This score \emph{S\textsubscript{L}} is used to create a ranking of managers \emph{M} and therefore decides if the manager wins a prize or not. The individual player score \emph{S\textsubscript{P\textsubscript{i}}} is calculated using the occurred events \emph{O} during a match multiplied with their corresponding points \emph{p} given by the SPITCH points catalogue. It exists a number of 33 different event types, such as pass, goal or tackle, therefore \emph{E\textsubscript{k}}, $\{\, k \mid k \in \{1, 2, ..., 33\}\,\}$ applies. For example, a pass is granted two and a goal 200 points. For negative event types, such as a missed chance, negative points can also be awarded. \parencite[cf.][]{spitch_points_2021} Hence, a player can have a negative score. The individual player score can be calculated using the following equation:
+
+\begin{equation}
+    S\textsubscript{P\textsubscript{i}} = \sum_{k=1}^{33} O\textsubscript{k} * p\textsubscript{k}
+    \label{eq:player_score}
+\end{equation}
+
+Given equations (\ref{eq:final_score_simplified}) and (\ref{eq:player_score}), the final line-up score \emph{S\textsubscript{L}} can be calculated using:
+
+\begin{equation}
+    S\textsubscript{L} = \sum_{i=1}^{11} \sum_{k=1}^{33} O\textsubscript{ik} * p\textsubscript{ik}
+    \label{eq:final_score_without_ms}
+\end{equation}
+
+The line-up allows nine players \emph{P} per real-life club. \parencite[cf.][]{spitch_rules_2021} Furthermore, each player \emph{P\textsubscript{i}} has one of the following simplified positions: goalkeeper, defender, midfielder, attacker. As a result, for example, four players who, in reality, all play as right defenders can be lined up in SPITCH without any disadvantages. Players can not be lined up for another position as their by SPITCH assigned simplified position. There is a selection of ten different formations that can be used to vary the number of defenders, midfielders, and attackers. However, this selection is limited to the relevant formations in reality, so there are only formations with a maximum of 5 players in one position form, except the goalkeeper position.
+
+Each player \emph{P\textsubscript{i}} has a transfer market value \emph{V\textsubscript{i}}. As already explained in the previous chapter, in SPITCH, any player can be fielded by any manager. For this reason, the prices of the players are based on various factors, which, however, are not publicly available. These factors include how many managers draft this player, his historical performance, and his level of fame in reality. These values \emph{V} exist to constrain the managers in their player choices. Since each manager only has a budget of €150m, he cannot exclusively field star players but must at the same time resort to more unknown players. This restriction turns the problem into a so-called \textbf{knapsack problem}. If the manager does not spend the budget completely, for example, by buying only inexpensive players, he will start the round with bonus points. The same applies vice versa if the budget is exceeded. This positive or negative score is called manager score \emph{S\textsubscript{M}}. The relation between the budget deviation \emph{$ \Delta \textsubscript{Budget} $} and manager score \emph{S\textsubscript{M}} is represented by the linear function:
+
+\begin{equation}
+    S\textsubscript{M} = \frac{\Delta \textsubscript{Budget}\cdot0.8}{\numprint{100000}} = \Delta \textsubscript{Budget}\cdot0.8\cdot10^{-5}
+    \label{eq:value_to_manager_score}
+\end{equation}
+
+Thereby, the factor $0.8\cdot10^{-5}$ is used by SPITCH as a balancing method. \parencite[cf.][]{spitch_rules_2021} For example, if the budget exceeds €10m, i.e., a budget of -€10m, the manager starts with $-\textup{\euro}10\textup{m}\cdot0.8\cdot10^{-5} = -80$ manager score. Consequently, manager points do not exponentially increase or decrease the further one moves away from the budget threshold. For this reason, the transfer market value \emph{V} of a player \emph{P} can be converted and taken into account to his points \emph{p}. For instance, a player \emph{P\textsubscript{1}} with a transfer market value \emph{V\textsubscript{1}} of €10m must therefore first score 80 points \emph{p} to achieve a total positive score for the team. Since a linear relation can be established between the target value, the final line-up score \emph{S\textsubscript{L}}, and the weight of the transfer market values V, there is \textbf{no typical knapsack problem at hand}.
+
+Since the transfer market value of a player \emph{V\textsubscript{i}} can be counted towards a player's individual score S\textsubscript{P\textsubscript{i}}, equation (\ref{eq:player_score}) can be supplemented by equation (\ref{eq:value_to_manager_score}) to create the adjusted player score:
+
+\begin{equation}
+    S\textsubscript{P\textsubscript{i}M} = -V\textsubscript{i}\cdot0.8\cdot10^{-5} + \sum_{k=1}^{33} O\textsubscript{k} * p\textsubscript{k}
+    \label{eq:player_score_with_value}
+\end{equation}
+
+resulting in the following equation to calculate the \textbf{adjusted} final line-up score \emph{S\textsubscript{LM}}:
+
+\begin{equation}
+    S\textsubscript{LM} = S\textsubscript{L} + S\textsubscript{M} = \sum_{i=1}^{11} \sum_{k=1}^{33} O\textsubscript{ik} * p\textsubscript{ik} + \Delta \textsubscript{Budget}\cdot0.8\cdot10^{-5}
+    \label{eq:final_score_with_ms}
+\end{equation}
+
+Each round, one player of the line-up can be appointed as captain, which results in his score getting doubled. The managers can participate for free or with a stake. The higher the stake, the higher the prize. The stake is graded according to so-called \emph{pitches}, such as the \emph{€2 pitch} or the \emph{€30 pitch}. Only the participants of the individual pitches compete against each other. On the \emph{free pitch}, the top 10 managers in the ranking, i.e., the ten managers with the highest adjusted final line-up scores {S\textsubscript{LM}}, win. On all other pithes, the top 25\% of managers, i.e., the upper quartile, win. Within these winning zones, the percentage of the prize won decreases exponentially. SPITCH does not publish the exact calculation of this decrease. The calculation of the price won will be addressed later in this work when evaluating the models in chapter \ref{chap:models}.

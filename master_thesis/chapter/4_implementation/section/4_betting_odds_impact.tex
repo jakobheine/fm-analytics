@@ -1,0 +1,41 @@
+\section{Betting Odds Impact}
+
+The results of the previous section suggest that betting odds have a positive influence on the predictive accuracy of the models. In this section, a two-sided \emph{t}-test will be used to check whether this assumption is correct. With the research question on page \pageref{research_question} in mind, the hypothesis \emph{H\textsubscript{1}} is: 
+
+\begin{quote}
+    \centering
+    \emph{'The accuracies of a model that predicts individual player performance increase under the influence of betting odds.'}
+\end{quote}
+
+Therefore, the null hypothesis \emph{H\textsubscript{0}} is:
+
+\begin{quote}
+    \centering
+    \emph{'The accuracy of a model that predicts individual player performance does not increase under the influence of betting odds.'}
+\end{quote}
+
+The data used for the t-test are two result series from the hyperparameter tuned Random Forest Regressor, one from the baseline and one from the treatment design. The absolute difference between the line-up and the best possible score for each matchday in the test dataset is chosen. Otherwise, the data would not be normalized considering the variances in the scores per matchdays. For the \emph{t}-test, the Python package \emph{researchpy} is used. Table \ref{tab:t-test} on page \pageref{tab:t-test} shows the results. 
+
+\begin{table}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \caption{Two-Sided t-Test Results}
+    \renewcommand{\arraystretch}{1.25}
+    \setlength{\tabcolsep}{10pt}
+    \label{tab:t-test}
+    \begin{tabular}{@{}ll@{}}
+    \toprule
+    \textbf{Metric} & \textbf{Result} \\ \midrule
+    Degrees of freedom      & 16 \\
+    t                       & 0.5928 \\
+    Two side test p value   & 0.5212 \\
+    Difference < 0 p value  & 0.7192 \\
+    Difference > 0 p value  & 0.2808 \\
+    Cohen's d               & 0.3130 \\
+    Hedge's g               & 0.2661 \\
+    Glass's delta           & 0.2665 \\
+    Pearson's r             & 0.1631 \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+The two main metrics to focus on are \emph{Cohen's d}, which indicates the strength of the effect, and the \emph{p-value}, which shows how statistically significant the sample is. With a \emph{Cohen's d} of \textbf{0.313}, the effect can be categorized as \textbf{small}. Furthermore, a 58.7\% chance exists that a model that uses betting odds will assemble a line-up with a higher score than a model without them, and 62.2\% of the line-ups assembled by the treatment models will be above the mean of the baseline models. \parencite[cf.][]{magnusson_interpreting_2021} However, a \emph{p-value} of 0.5212 indicates that the sample used for calculating is not statistically significant. The reason for this is probably the too-small sample of only nine match days. Therefore, with a usual significance level $\alpha$ of 0.05, the null hypothesis \emph{H\textsubscript{0}} can not be rejected. Nevertheless, in future studies with a larger dataset, the implied effect could be further investigated.

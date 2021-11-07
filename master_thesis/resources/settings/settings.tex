@@ -10,6 +10,7 @@
 \usepackage{scrhack}
 
 \usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false} % caption left-aligned
 
 % keyword directory
 \usepackage{imakeidx}
@@ -40,7 +41,30 @@
 
 \usepackage{tabularx}
 
+\usepackage{chngcntr} % change counter to not start new at each chapter
+\counterwithout{table}{chapter} % for tables
+\counterwithout{equation}{chapter} % for equations
+\counterwithout{figure}{chapter} % for figures
+
+\usepackage{numprint} % auto-format numbers over 999 ...
+\npthousandsep{,} % ... to use ',' as seperator
+
+\usepackage{eurosym} % add € for equations
+
 \usepackage{longtable}
+\usepackage{multirow} % header in table matrix
+
+\usepackage{booktabs}
+\renewcommand{\arraystretch}{1.5} % increase height of table rows booktabs
+
+\usepackage{makecell}
+
+\makeatletter
+\def\@rothead[#1]#2{\thead{\\[-.65\normalbaselineskip]
+  \turn{\cellrotangle}\thead[#1]{#2}\endturn}}
+\makeatother
+
+\usepackage{rotating}
 
 \usepackage{listings}
 
@@ -49,12 +73,15 @@
 \usepackage{tikz}
 
 \usepackage{graphicx}
+\graphicspath{ {./} }
 
 \usepackage{wrapfig}
 
 \usepackage[hidelinks,english]{hyperref}
 
+\usepackage{lscape} % produce landscape pages in mainly portrait document
+
 \usepackage{csquotes} % used from biber
-\usepackage[backend=biber, citestyle=authoryear-comp]{biblatex}
+\usepackage[backend=biber, citestyle=authoryear, style=apa,natbib]{biblatex}
 \addbibresource{references/references.bib}
-\renewcommand*{\nameyeardelim}{\addcomma\space} % comma between author and year
+% \renewcommand*{\nameyeardelim}{\addcomma\space} % comma between author and year
