@@ -15,7 +15,17 @@ For the second metric, as SPITCH, unfortunately, does not give any insight into 
     \label{eq:percentage_of_best_score_to_rank}
 \end{equation}
 
-The corresponding prize to each rank can be seen on the screenshot \textbf{SCREENSHOT}. This distribution applies to all \emph{pitches} with stakes. The following function can be derived using the data from this screenshot, which calculates the share of the profit \emph{Profit\textsubscript{\%}} from the associated rank \emph{Rank}:
+The corresponding prize to each rank can be seen on the screenshot from \emph{SPITCH} in figure \ref{fig:prize-percentage}.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=6cm]{chapter/4_implementation/figures/ranking_percentage.png}}
+    \captionsetup{justification=centering}
+    \caption{Percentage of Prize per Rank for the €30 Pitch}
+    \label{fig:prize-percentage}
+\end{figure}
+
+This distribution applies to all \emph{pitches} with stakes. The following function can be derived using the data from this screenshot, which calculates the share of the profit \emph{Profit\textsubscript{\%}} from the associated rank \emph{Rank}:
 
 \begin{equation}
     Profit\textsubscript{\%} = 27.56 * \emph{e}^{-0.72 * Rank} + 1.3 

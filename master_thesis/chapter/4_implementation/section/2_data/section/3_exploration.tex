@@ -33,7 +33,7 @@ Each feature is first analyzed individually and then in combination with each ot
 
 \subsubsection{Name}
 
-The name of a player is synonymous with the player itself in this context. As can be seen from the following figure, there aren't identical numbers of entries for each player, which should not be the case as in the previous section an entry was assigned to each player for each matchday and event type. The reason for this difference is that there are entries for the event types \textbf{player\_on} and \textbf{player\_off} in the data set, which are not found in the points catalog from SPITCH and have no influence on the score. For this reason, these events can be ignored.
+The name of a player is synonymous with the player itself in this context. As can be seen from the following figure, there aren't identical numbers of entries for each player. This deviation should not be the case because, in the previous section, an entry was assigned to each player for each matchday and event type. The reason for this difference is that there are entries for the event types \textbf{player\_on} and \textbf{player\_off} in the data set, which is not found in the points catalog from SPITCH and has no influence on the score. For this reason, these events can be ignored.
 
 \begin{figure}[H]
     \centering
@@ -87,7 +87,7 @@ Many different betting odds systems exist. The betting odds used in this thesis 
 
 \subsubsection{Occurences}
 
-The bar chart below shows that most of the rows have a value of 0 (\textbf{87.3\%}). The frequency monotonically decreases as one moves further away from zero. Therefore, the main task of machine learning models would be to predict situations where the result are not zero, which leads to a classification problem instead of the initial regression problem. As announced at the beginning of the section, a final decision has to be made in favor of one data set. In addition to the below figure, further investigations with this dataset, which cannot be presented in this thesis due to the large volume, showed that its use is unsuitable. For this reason, it was decided to use the data set that contains the calculated scores.
+The bar chart below shows that most of the rows have a value of 0 (\textbf{87.3\%}). The frequency monotonically decreases as one moves further away from zero. Therefore, the main task of machine learning models would be to predict situations where the result are not zero, which leads to a classification problem instead of the initial regression problem. As announced at the beginning of the section, a final decision has to be made in favor of one data set. In addition to the figure below, further investigations with this dataset, which cannot be presented in this thesis due to the large volume, showed that its use is unsuitable. For this reason, it was decided to use the data set that contains the calculated scores.
 
 \begin{figure}[H]
     \centering
