@@ -1,6 +1,6 @@
-\subsection{Processment}
+\subsection{Processing}
 
-After the data has been obtained in the previous section, it is processed and merged in this section. In the offline phase, these are the first steps in the Jupyter Notebook, while in the online phase, these steps take place in the \emph{Prediction} microservice. 
+After the data has been obtained in the previous section, it is processed and merged in this section. In the offline phase, the first steps in the Jupyter Notebook, while in the online phase, these steps take place in the \emph{Prediction} microservice. 
 
 In the database query, the player-specific tables are joined with the \emph{Event} table. This join converts the identifier columns into human-readable and understandable columns. For example, the name, club, and position are obtained from the player identifier. After all the event data in the database has been fetched and made comprehensible, this data must first be supplemented because the API only returns events that have indeed happened on the pitch. However, it could also be interesting to know that a player \textbf{did not} play, for example, a single pass on a matchday. This information is currently not yet available in the data set and will be added in the following step. Therefore, the points catalog from SPITCH \parencite[see][]{spitch_points_2021} has to be loaded, which contains all events that can happen in SPITCH. After that, the events can be grouped by player and matchday. For each group, the points catalog gets iterated over. If there exists no corresponding entry in the group for an event type, an entry is added with the occurrence of zero. After this step, the event data is ready to use.
 
