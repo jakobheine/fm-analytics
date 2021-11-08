@@ -24,7 +24,7 @@ Additionally, a `.env` file is needed containing the following **environment var
 |POSTGRES_PASSWORD  |Password of the database user  |
 |TELEGRAM_TOKEN     |Token for the telegram bot     |
 |JUPYTER_TOKEN      |Token for Jupyter Notebook     |
-|ODDS_API_KEY       |API Key for the-odds-api       |
+|ODDS_API_KEY       |API Key for the-odds-API       |
 
 ## Running the Application
 
@@ -34,7 +34,7 @@ After the **Github** repository has been cloned, the application can be started 
 
 With the help of **Docker-Compose**, each service is started as a Docker container. For this purpose, each Docker image is initially built once. A Python Virtual Environment (**venv**) is created in each service, which installs the previously defined dependencies in the `requirements.in`-file. 
 
-When the system is initially started, all services are created and all data of the current season is stored in the database. If the system is shut down and restarted later, the old database is taken over and the services only request the missing information.
+When the system is initially started, all services are created, and all data of the current season is stored in the database. If the system is shut down and restarted later, the old database is taken over, and the services only request the missing information.
 
 Each service is divided into a `main.py` and one or more other Python files. The `main.py` file contains only the **execution logic** of the services and calls methods from the other files.
 
@@ -46,11 +46,11 @@ The Jupyter Notebook can be started via **Docker** or **locally**.
 
 When the application is running, it can be accessed via the following link: http://datascience-notebook:8888/JUPYTER_TOKEN
 
-The Docker container has all needed dependencies already installed.
+The Docker container has all the needed dependencies already installed.
 
 ### Local
 
-To run the Jupyter Notebook locally, `python3` is needed and the following steps are required:
+To run the Jupyter Notebook locally, `python3` is needed, and the following steps are required:
 
 1. Navigate to the notebooks directory:
 ```
