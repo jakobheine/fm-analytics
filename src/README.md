@@ -70,11 +70,11 @@ pip install pip-tools
 ```
 5. Create requirements.txt from requirements.in:
 ```
-pip-compile requirements.in
+pip-compile dependencies/requirements.in
 ```
 6. Install dependencies:
 ```
-pip install -r requirements.txt
+pip install -r dependencies/requirements.txt
 ```
 
 Furthermore, the notebook can be started in two ways, once with and once without access to the database. With the latter, the required data is loaded at the appropriate points by CSV files, which additionally leads to the notebook running faster. 
